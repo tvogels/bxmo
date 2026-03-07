@@ -33,7 +33,14 @@ const languages = loadLanguages();
 
   <!-- Edition info -->
   <div class="card info-card">
-    <Fragment set:html={edition.info.replace(/\n/g, '<br>')} />
+    <Fragment
+      set:html={edition.info
+        .replace(
+          /\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g,
+          '<a href="$2" target="_blank" rel="noopener">$1</a>',
+        )
+        .replace(/\n/g, '<br>')}
+    />
   </div>
 
   <!-- Problem papers -->

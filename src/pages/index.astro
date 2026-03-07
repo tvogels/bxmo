@@ -14,25 +14,38 @@ const editions = years.map((y) => {
     countryCount: ed.delegations.length,
   };
 });
+
+const countryColors: Record<string, string> = {
+  bel: '#e30613',
+  nld: '#ff6600',
+  lux: '#00a2e0',
+};
 ---
 
-<Layout title="BxMO — Benelux Mathematical Olympiad">
-  <h1>Benelux Mathematical Olympiad</h1>
-  <p class="subtitle">
-    Results and statistics from every BxMO edition since 2009.
-  </p>
+<Layout title="BxMO — Benelux Mathematical Olympiad" hero={true}>
+  <Fragment slot="hero">
+    <h1>Benelux Mathematical Olympiad</h1>
+    <p>Results and statistics from every BxMO edition since 2009.</p>
+  </Fragment>
 
   <div class="editions-grid">
     {
       editions.map((ed) => (
-        <a href={`/results/${ed.year}`} class="edition-card card">
-          <span class="edition-year">{ed.year}</span>
-          <span class="edition-location">
-            {ed.location}, {ed.countryName}
-          </span>
-          <span class="edition-meta">
-            {ed.participantCount} participants · {ed.countryCount} countries
-          </span>
+        <a
+          href={`/results/${ed.year}`}
+          class="edition-card"
+          style={`--accent: ${countryColors[ed.country] || '#2563eb'}`}
+        >
+          <div class="card-accent" />
+          <div class="card-body">
+            <span class="edition-year">{ed.year}</span>
+            <span class="edition-location">{ed.location}</span>
+            <span class="edition-country">{ed.countryName}</span>
+            <span class="edition-meta">
+              {ed.participantCount} participants · {ed.countryCount}{' '}
+              {ed.countryCount === 1 ? 'country' : 'countries'}
+            </span>
+          </div>
         </a>
       ))
     }
@@ -40,40 +53,79 @@ const editions = years.map((y) => {
 </Layout>
 
 <style>
-  .subtitle {
-    color: var(--color-text-muted);
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-  }
   .editions-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 1rem;
   }
   .edition-card {
     display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-    transition:
-      transform 0.15s,
-      box-shadow 0.15s;
+    overflow: hidden;
+    border-radius: var(--radius);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-sm);
     color: var(--color-text);
+    transition:
+      transform 0.2s,
+      box-shadow 0.2s;
   }
   .edition-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
     text-decoration: none;
   }
+  .card-accent {
+    width: 5px;
+    flex-shrink: 0;
+    background: var(--accent);
+  }
+  .card-body {
+    padding: 1rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
   .edition-year {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--color-primary);
+    font-size: 1.75rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    background: linear-gradient(
+      135deg,
+      var(--accent),
+      color-mix(in srgb, var(--accent) 60%, #1a1a2e)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
   .edition-location {
     font-size: 0.95rem;
+    font-weight: 500;
+    margin-top: 0.15rem;
+  }
+  .edition-country {
+    font-size: 0.82rem;
+    color: var(--color-text-muted);
   }
   .edition-meta {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     color: var(--color-text-muted);
+    margin-top: 0.35rem;
+    padding-top: 0.35rem;
+    border-top: 1px solid var(--color-border);
+  }
+  @media (max-width: 640px) {
+    .editions-grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 0.75rem;
+    }
+    .card-body {
+      padding: 0.75rem 1rem;
+    }
+    .edition-year {
+      font-size: 1.5rem;
+    }
   }
 </style>

@@ -79,7 +79,7 @@ function medalLabel(award: string | null): string {
     {nextYear && <a href={`/results/${nextYear}`}>{nextYear} →</a>}
   </div>
 
-  <h1>BxMO {year} — {edition.location}</h1>
+  <h1>BxMO {year} <span class="h1-sep">—</span> {edition.location}</h1>
   <p class="subtitle">
     {countryName(edition.country, countries)} ·
     {edition.participants.length} participants ·
@@ -87,28 +87,29 @@ function medalLabel(award: string | null): string {
   </p>
 
   <!-- Medal summary -->
-  <div class="medal-summary card">
-    <h3>Medals</h3>
-    <div class="medal-grid">
-      <div class="medal-stat">
-        <span class="medal medal-gold">{medals.gold}</span> Gold (≥{
-          edition.thresholds.gold
-        })
+  <div class="medal-summary">
+    <div class="medal-cards">
+      <div class="medal-card medal-card-gold">
+        <span class="medal-count">{medals.gold}</span>
+        <span class="medal-label">Gold</span>
+        <span class="medal-threshold">≥{edition.thresholds.gold}</span>
       </div>
-      <div class="medal-stat">
-        <span class="medal medal-silver">{medals.silver}</span> Silver (≥{
-          edition.thresholds.silver
-        })
+      <div class="medal-card medal-card-silver">
+        <span class="medal-count">{medals.silver}</span>
+        <span class="medal-label">Silver</span>
+        <span class="medal-threshold">≥{edition.thresholds.silver}</span>
       </div>
-      <div class="medal-stat">
-        <span class="medal medal-bronze">{medals.bronze}</span> Bronze (≥{
-          edition.thresholds.bronze
-        })
+      <div class="medal-card medal-card-bronze">
+        <span class="medal-count">{medals.bronze}</span>
+        <span class="medal-label">Bronze</span>
+        <span class="medal-threshold">≥{edition.thresholds.bronze}</span>
       </div>
       {
         edition.honourableMentions && medals.hm > 0 && (
-          <div class="medal-stat">
-            <span class="medal medal-hm">{medals.hm}</span> Honourable Mention
+          <div class="medal-card medal-card-hm">
+            <span class="medal-count">{medals.hm}</span>
+            <span class="medal-label">HM</span>
+            <span class="medal-threshold">full score on a problem</span>
           </div>
         )
       }
@@ -255,41 +256,115 @@ function medalLabel(award: string | null): string {
   .page-nav {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1rem;
-    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+  }
+  .page-nav a {
+    padding: 0.3rem 0.75rem;
+    border-radius: 99px;
+    background: var(--color-primary-light);
+    color: var(--color-primary);
+    font-weight: 500;
+    transition: background 0.15s;
+  }
+  .page-nav a:hover {
+    background: var(--color-primary);
+    color: white;
+    text-decoration: none;
   }
   .page-nav .spacer {
     flex: 1;
   }
+  .h1-sep {
+    color: var(--color-text-muted);
+    font-weight: 400;
+  }
   .subtitle {
     color: var(--color-text-muted);
     margin-bottom: 1.5rem;
+    font-size: 1.05rem;
   }
   .medal-summary {
     margin-bottom: 2rem;
   }
-  .medal-summary h3 {
-    margin-top: 0;
-    margin-bottom: 0.75rem;
-  }
-  .medal-grid {
+  .medal-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 0.75rem;
   }
-  .medal-stat {
+  .medal-card {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
-    font-size: 0.9rem;
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius);
+    min-width: 100px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+  }
+  .medal-count {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.03em;
+  }
+  .medal-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 0.25rem;
+  }
+  .medal-threshold {
+    font-size: 0.7rem;
+    opacity: 0.7;
+    margin-top: 0.15rem;
+  }
+  .medal-card-gold {
+    background: linear-gradient(135deg, #fef3c7, #fde68a);
+    color: #92400e;
+  }
+  .medal-card-silver {
+    background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+    color: #475569;
+  }
+  .medal-card-bronze {
+    background: linear-gradient(135deg, #fed7aa, #fdba74);
+    color: #9a3412;
+  }
+  .medal-card-hm {
+    background: linear-gradient(135deg, #d1fae5, #a7f3d0);
+    color: #065f46;
   }
   .table-wrap {
     overflow-x: auto;
     margin-bottom: 2rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--color-border);
+  }
+  .table-wrap table {
+    margin: 0;
+  }
+  .table-wrap th:first-child,
+  .table-wrap td:first-child {
+    padding-left: 1rem;
   }
   th.num,
   td.num {
     text-align: right;
+  }
+  @media (max-width: 640px) {
+    .medal-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .medal-card {
+      min-width: unset;
+      padding: 0.75rem;
+    }
+    .medal-count {
+      font-size: 1.5rem;
+    }
   }
 </style>
 

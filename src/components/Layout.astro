@@ -2,11 +2,13 @@
 interface Props {
   title?: string;
   description?: string;
+  hero?: boolean;
 }
 
 const {
   title = 'BxMO',
   description = 'Benelux Mathematical Olympiad — Results and Statistics',
+  hero = false,
 } = Astro.props;
 
 const currentPath = Astro.url.pathname;
@@ -25,14 +27,19 @@ const navItems = [
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <title>{title}</title>
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
         <a href="/" class="site-logo">
-          <strong>BxMO</strong>
-          <span class="logo-sub">Benelux Mathematical Olympiad</span>
+          <span class="logo-mark">BxMO</span>
         </a>
         <nav class="site-nav">
           {
@@ -56,7 +63,17 @@ const navItems = [
       </div>
     </header>
 
-    <main class="container">
+    {
+      hero && (
+        <div class="hero">
+          <div class="container">
+            <slot name="hero" />
+          </div>
+        </div>
+      )
+    }
+
+    <main class:list={['container', { 'has-hero': hero }]}>
       <slot />
     </main>
 
@@ -78,20 +95,28 @@ const navItems = [
       }
 
       :root {
-        --color-bg: #fafafa;
+        --color-bg: #f8f9fc;
         --color-surface: #ffffff;
         --color-text: #1a1a2e;
-        --color-text-muted: #555;
-        --color-primary: #1a56db;
-        --color-primary-light: #e8effc;
-        --color-border: #e0e0e0;
-        --color-gold: #d4a017;
-        --color-silver: #8a8a8a;
-        --color-bronze: #b87333;
-        --color-hm: #5b8a72;
-        --radius: 6px;
-        --shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-        --font-sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        --color-text-muted: #64748b;
+        --color-primary: #2563eb;
+        --color-primary-dark: #1d4ed8;
+        --color-primary-light: #eff4ff;
+        --color-accent: #f59e0b;
+        --color-border: #e2e8f0;
+        --color-gold: #d97706;
+        --color-silver: #64748b;
+        --color-bronze: #c2410c;
+        --color-hm: #059669;
+        --radius: 10px;
+        --radius-sm: 6px;
+        --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+        --shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+        --shadow-md:
+          0 4px 6px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.04);
+        --shadow-lg:
+          0 10px 25px rgba(0, 0, 0, 0.08), 0 4px 10px rgba(0, 0, 0, 0.04);
+        --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
         --font-mono: 'SF Mono', 'Fira Code', monospace;
       }
 
@@ -101,6 +126,7 @@ const navItems = [
         color: var(--color-text);
         line-height: 1.6;
         font-size: 16px;
+        -webkit-font-smoothing: antialiased;
       }
 
       body {
@@ -128,18 +154,24 @@ const navItems = [
       h2,
       h3,
       h4 {
-        line-height: 1.3;
+        line-height: 1.2;
         margin-bottom: 0.5em;
+        letter-spacing: -0.02em;
       }
       h1 {
-        font-size: 2rem;
+        font-size: 2.25rem;
+        font-weight: 800;
       }
       h2 {
         font-size: 1.5rem;
-        margin-top: 2rem;
+        font-weight: 700;
+        margin-top: 2.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid var(--color-border);
       }
       h3 {
         font-size: 1.15rem;
+        font-weight: 600;
         margin-top: 1.5rem;
       }
 
@@ -151,20 +183,23 @@ const navItems = [
       .site-header {
         background: var(--color-surface);
         border-bottom: 1px solid var(--color-border);
-        padding: 0.75rem 0;
+        padding: 0 0;
         position: sticky;
         top: 0;
         z-index: 100;
+        backdrop-filter: blur(12px);
+        background: rgba(255, 255, 255, 0.92);
       }
       .header-inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 1rem;
+        height: 56px;
       }
       .site-logo {
         display: flex;
-        align-items: baseline;
+        align-items: center;
         gap: 0.5rem;
         color: var(--color-text);
         font-size: 1.25rem;
@@ -172,20 +207,26 @@ const navItems = [
       .site-logo:hover {
         text-decoration: none;
       }
-      .logo-sub {
-        font-size: 0.85rem;
-        color: var(--color-text-muted);
+      .logo-mark {
+        font-weight: 800;
+        font-size: 1.3rem;
+        background: linear-gradient(135deg, var(--color-primary), #7c3aed);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        letter-spacing: -0.03em;
       }
       .site-nav {
         display: flex;
-        gap: 0.25rem;
+        gap: 0.15rem;
       }
       .nav-link {
-        padding: 0.4rem 0.75rem;
-        border-radius: var(--radius);
+        padding: 0.4rem 0.85rem;
+        border-radius: 99px;
         color: var(--color-text-muted);
-        font-size: 0.9rem;
-        transition: background 0.15s;
+        font-size: 0.875rem;
+        font-weight: 500;
+        transition: all 0.15s;
       }
       .nav-link:hover {
         background: var(--color-primary-light);
@@ -193,25 +234,54 @@ const navItems = [
         color: var(--color-primary);
       }
       .nav-link.active {
-        background: var(--color-primary-light);
-        color: var(--color-primary);
+        background: var(--color-primary);
+        color: white;
         font-weight: 600;
+      }
+
+      /* Hero */
+      .hero {
+        background: linear-gradient(
+          135deg,
+          #1e3a5f 0%,
+          #2563eb 50%,
+          #7c3aed 100%
+        );
+        color: white;
+        padding: 3.5rem 0 3rem;
+      }
+      .hero h1 {
+        color: white;
+        font-size: 2.75rem;
+        margin-bottom: 0.3em;
+      }
+      .hero p {
+        color: rgba(255, 255, 255, 0.85);
+        font-size: 1.15rem;
+        margin-bottom: 0;
       }
 
       /* Main */
       main {
         flex: 1;
-        padding-top: 2rem;
+        padding-top: 2.5rem;
         padding-bottom: 3rem;
+      }
+      main.has-hero {
+        padding-top: 2.5rem;
+      }
+      main > :first-child {
+        margin-top: 0;
       }
 
       /* Footer */
       .site-footer {
         border-top: 1px solid var(--color-border);
-        padding: 1.5rem 0;
+        padding: 2rem 0;
         color: var(--color-text-muted);
-        font-size: 0.85rem;
+        font-size: 0.8rem;
         text-align: center;
+        background: var(--color-surface);
       }
 
       /* Card */
@@ -220,78 +290,105 @@ const navItems = [
         border: 1px solid var(--color-border);
         border-radius: var(--radius);
         padding: 1.25rem;
-        box-shadow: var(--shadow);
+        box-shadow: var(--shadow-sm);
       }
 
       /* Table */
       table {
         width: 100%;
         border-collapse: collapse;
-        font-size: 0.9rem;
+        font-size: 0.875rem;
       }
       th,
       td {
-        padding: 0.5rem 0.75rem;
+        padding: 0.6rem 0.75rem;
         text-align: left;
         border-bottom: 1px solid var(--color-border);
       }
       th {
         background: var(--color-bg);
         font-weight: 600;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         text-transform: uppercase;
-        letter-spacing: 0.03em;
+        letter-spacing: 0.05em;
         color: var(--color-text-muted);
+        position: sticky;
+        top: 56px;
       }
       td.num {
         text-align: right;
         font-variant-numeric: tabular-nums;
+        font-feature-settings: 'tnum';
       }
-      tr:hover {
+      tbody tr {
+        transition: background 0.1s;
+      }
+      tbody tr:hover {
         background: var(--color-primary-light);
       }
 
       /* Medal badges */
       .medal {
-        display: inline-block;
-        padding: 0.15em 0.5em;
-        border-radius: 3px;
-        font-size: 0.8rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25em;
+        padding: 0.2em 0.6em;
+        border-radius: 99px;
+        font-size: 0.75rem;
         font-weight: 600;
         line-height: 1.4;
+        white-space: nowrap;
       }
       .medal-gold {
-        background: #fef3c7;
+        background: linear-gradient(135deg, #fef3c7, #fde68a);
         color: #92400e;
+        box-shadow: 0 1px 2px rgba(217, 119, 6, 0.15);
       }
       .medal-silver {
-        background: #f1f5f9;
+        background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
         color: #475569;
+        box-shadow: 0 1px 2px rgba(100, 116, 139, 0.15);
       }
       .medal-bronze {
-        background: #fed7aa;
+        background: linear-gradient(135deg, #fed7aa, #fdba74);
         color: #9a3412;
+        box-shadow: 0 1px 2px rgba(194, 65, 12, 0.15);
       }
       .medal-hm {
-        background: #d1fae5;
+        background: linear-gradient(135deg, #d1fae5, #a7f3d0);
         color: #065f46;
+        box-shadow: 0 1px 2px rgba(5, 150, 105, 0.15);
       }
 
       /* Responsive */
       @media (max-width: 640px) {
         .header-inner {
+          height: auto;
+          padding: 0.6rem 0;
           flex-direction: column;
-          gap: 0.5rem;
+          gap: 0.4rem;
         }
-        .logo-sub {
-          display: none;
+        .hero {
+          padding: 2.5rem 0 2rem;
+        }
+        .hero h1 {
+          font-size: 2rem;
+        }
+        h1 {
+          font-size: 1.75rem;
+        }
+        h2 {
+          font-size: 1.25rem;
         }
         table {
-          font-size: 0.8rem;
+          font-size: 0.78rem;
         }
         th,
         td {
-          padding: 0.35rem 0.5rem;
+          padding: 0.4rem 0.5rem;
+        }
+        th {
+          position: static;
         }
       }
 
