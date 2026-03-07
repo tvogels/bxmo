@@ -38,6 +38,26 @@ const problemStats = computeProblemStats(withAwards);
 const prevYear = years[years.indexOf(yearNum) - 1];
 const nextYear = years[years.indexOf(yearNum) + 1];
 
+// Chart data for client-side rendering
+const chartCountryData = JSON.stringify(
+  countryStats.map((cs) => ({
+    name: cs.countryName,
+    min: cs.minScore,
+    q1: cs.q1,
+    median: cs.median,
+    q3: cs.q3,
+    max: cs.maxScore,
+    avg: cs.avgScore,
+  })),
+);
+const chartProblemData = JSON.stringify(
+  problemStats.map((ps) => ({
+    label: `P${ps.problem}`,
+    histogram: ps.histogram,
+    mean: ps.mean,
+  })),
+);
+
 function medalClass(award: string | null): string {
   if (!award) return '';
   return `medal medal-${award}`;
@@ -179,6 +199,11 @@ function medalLabel(award: string | null): string {
     </table>
   </div>
 
+  <!-- Country score chart -->
+  <div class="chart-container" style="max-width: 100%; margin-bottom: 2rem;">
+    <canvas id="country-chart"></canvas>
+  </div>
+
   <!-- Problem statistics -->
   <h2>Problem Statistics</h2>
   <div class="table-wrap">
@@ -210,6 +235,11 @@ function medalLabel(award: string | null): string {
         }
       </tbody>
     </table>
+  </div>
+
+  <!-- Problem score histogram -->
+  <div class="chart-container" style="max-width: 100%; margin-bottom: 2rem;">
+    <canvas id="problem-chart"></canvas>
   </div>
 
   <!-- Links -->
@@ -262,3 +292,110 @@ function medalLabel(award: string | null): string {
     text-align: right;
   }
 </style>
+
+<script is:inline define:vars={{ chartCountryData, chartProblemData }}>
+  async function initCharts() {
+    const { Chart, registerables } =
+      await import('https://cdn.jsdelivr.net/npm/chart.js@4/+esm');
+    Chart.register(...registerables);
+
+    const countryData = JSON.parse(chartCountryData);
+    const problemData = JSON.parse(chartProblemData);
+
+    // Country score distribution — floating bar chart showing min/Q1/median/Q3/max
+    const countryCtx = document.getElementById('country-chart');
+    if (countryCtx && countryData.length > 0) {
+      const labels = countryData.map((c) => c.name);
+      new Chart(countryCtx, {
+        type: 'bar',
+        data: {
+          labels,
+          datasets: [
+            {
+              label: 'Score Range (Min–Max)',
+              data: countryData.map((c) => [c.min, c.max]),
+              backgroundColor: 'rgba(26, 86, 219, 0.15)',
+              borderColor: 'rgba(26, 86, 219, 0.3)',
+              borderWidth: 1,
+              borderSkipped: false,
+            },
+            {
+              label: 'IQR (Q1–Q3)',
+              data: countryData.map((c) => [c.q1, c.q3]),
+              backgroundColor: 'rgba(26, 86, 219, 0.4)',
+              borderColor: 'rgba(26, 86, 219, 0.6)',
+              borderWidth: 1,
+              borderSkipped: false,
+            },
+            {
+              label: 'Average',
+              data: countryData.map((c) => c.avg),
+              type: 'line',
+              borderColor: '#d4a017',
+              backgroundColor: '#d4a017',
+              pointRadius: 5,
+              pointStyle: 'diamond',
+              borderWidth: 2,
+              fill: false,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            title: { display: true, text: 'Score Distribution by Country' },
+            legend: { position: 'bottom' },
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              title: { display: true, text: 'Total Score' },
+            },
+          },
+        },
+      });
+    }
+
+    // Problem score histogram — grouped bar chart
+    const problemCtx = document.getElementById('problem-chart');
+    if (problemCtx && problemData.length > 0) {
+      const colors = [
+        'rgba(26, 86, 219, 0.6)',
+        'rgba(212, 160, 23, 0.6)',
+        'rgba(184, 115, 51, 0.6)',
+        'rgba(91, 138, 114, 0.6)',
+      ];
+      new Chart(problemCtx, {
+        type: 'bar',
+        data: {
+          labels: ['0', '1', '2', '3', '4', '5', '6', '7'],
+          datasets: problemData.map((p, i) => ({
+            label: `${p.label} (μ=${p.mean.toFixed(1)})`,
+            data: p.histogram,
+            backgroundColor: colors[i % colors.length],
+          })),
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            title: { display: true, text: 'Score Distribution by Problem' },
+            legend: { position: 'bottom' },
+          },
+          scales: {
+            x: { title: { display: true, text: 'Score' } },
+            y: {
+              beginAtZero: true,
+              title: { display: true, text: 'Number of Contestants' },
+            },
+          },
+        },
+      });
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCharts);
+  } else {
+    initCharts();
+  }
+</script>
