@@ -20,6 +20,7 @@ const countryColors: Record<string, string> = {
   nld: '#ff6600',
   lux: '#00a2e0',
 };
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <Layout title="BxMO — Benelux Mathematical Olympiad" hero={true}>
@@ -32,7 +33,7 @@ const countryColors: Record<string, string> = {
     {
       editions.map((ed) => (
         <a
-          href={`/results/${ed.year}`}
+          href={`${base}/results/${ed.year}`}
           class="edition-card"
           style={`--accent: ${countryColors[ed.country] || '#2563eb'}`}
         >

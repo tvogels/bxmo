@@ -1,7 +1,8 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://bxmo.org',
+  site: 'https://tvogels.github.io',
+  base: '/bxmo',
   output: 'static',
   build: {
     format: 'directory',

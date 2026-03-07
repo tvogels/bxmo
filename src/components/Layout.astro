@@ -11,12 +11,13 @@ const {
   hero = false,
 } = Astro.props;
 
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const currentPath = Astro.url.pathname;
 
 const navItems = [
-  { href: '/', label: 'Home' },
-  { href: '/about', label: 'About' },
-  { href: '/search', label: 'Search' },
+  { href: `${base}/`, label: 'Home' },
+  { href: `${base}/about`, label: 'About' },
+  { href: `${base}/search`, label: 'Search' },
 ];
 ---
 
@@ -26,7 +27,7 @@ const navItems = [
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href={`${base}/favicon.ico`} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -38,7 +39,7 @@ const navItems = [
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a href="/" class="site-logo">
+        <a href={`${base}/`} class="site-logo">
           <span class="logo-mark">BxMO</span>
         </a>
         <nav class="site-nav">
@@ -51,7 +52,9 @@ const navItems = [
                   {
                     active:
                       currentPath === item.href ||
-                      (item.href !== '/' && currentPath.startsWith(item.href)),
+                      currentPath === `${item.href}/` ||
+                      (item.href !== `${base}/` &&
+                        currentPath.startsWith(item.href)),
                   },
                 ]}
               >

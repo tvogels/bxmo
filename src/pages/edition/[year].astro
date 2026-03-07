@@ -20,6 +20,7 @@ const yearNum = Number(year);
 const edition = loadEdition(yearNum)!;
 const countries = loadCountries();
 const languages = loadLanguages();
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const countryColors: Record<string, string> = {
   bel: '#e30613',
@@ -74,7 +75,7 @@ const langIcons: Record<string, string> = {
     {
       edition.problems.map((p) => (
         <a
-          href={`/problems/bxmo-problems-${year}-${p.lang}.pdf`}
+          href={`${base}/problems/bxmo-problems-${year}-${p.lang}.pdf`}
           class="pdf-link"
         >
           <span class="pdf-icon">{langIcons[p.lang] || '📄'}</span>
@@ -120,7 +121,7 @@ const langIcons: Record<string, string> = {
   </div>
 
   <div class="bottom-nav">
-    <a href={`/results/${year}`} class="results-link">
+    <a href={`${base}/results/${year}`} class="results-link">
       View results for BxMO {year} →
     </a>
   </div>
