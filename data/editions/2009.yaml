@@ -1,0 +1,320 @@
+year: 2009
+location: Bergen op Zoom
+country: nld
+thresholds:
+  bronze: 9
+  silver: 16
+  gold: 24
+honourableMentions: false
+info: |-
+  The first BxMO was held 8-10 May 2009. The location was the Stayokay youth hostel in Bergen op Zoom. The contestants went swimming after the contest on Saturday, and had a mathematical quiz on Sunday morning before the awards ceremony.
+
+  [Website](http://www.wiskundeolympiade.nl/bxmo/bxmo2009/)
+problems:
+  - lang: en
+  - lang: fl
+  - lang: fr
+  - lang: nl
+delegations:
+  - country: bel
+    leader:
+      fname: Philippe
+      lname: Niederkorn
+    deputies:
+      - fname: Tom
+        lname: De Medts
+      - fname: Pierre-Emmanuel
+        lname: Caprace
+  - country: lux
+    leader:
+      fname: Charles
+      lname: Leytem
+    deputies:
+      - fname: Bernard
+        lname: Felten
+      - fname: Pascal
+        lname: Dupont
+  - country: nld
+    leader:
+      fname: Quintijn
+      lname: Puite
+    deputies:
+      - fname: Birgit
+        mname: van
+        lname: Dalen
+      - fname: Johan
+        lname: Konter
+participants:
+  - 'no': 1
+    country: bel
+    fname: Löic
+    lname: Burger
+    scores:
+      - 7
+      - 1
+      - 1
+      - 0
+  - 'no': 2
+    country: bel
+    fname: Cédric
+    lname: De Groote
+    scores:
+      - 4
+      - 2
+      - 2
+      - 1
+  - 'no': 3
+    country: bel
+    fname: Florian
+    lname: De Leger
+    scores:
+      - 1
+      - 3
+      - 1
+      - 0
+  - 'no': 4
+    country: bel
+    fname: Antoine
+    lname: Dujardin
+    scores:
+      - 1
+      - 0
+      - 2
+      - 0
+  - 'no': 5
+    country: bel
+    fname: Nicolas
+    lname: Radu
+    scores:
+      - 7
+      - 7
+      - 1
+      - 1
+  - 'no': 6
+    country: bel
+    fname: Thiebout
+    lname: Delabie
+    scores:
+      - 3
+      - 1
+      - 1
+      - 1
+  - 'no': 7
+    country: bel
+    fname: Heide
+    lname: Goethals
+    scores:
+      - 3
+      - 1
+      - 0
+      - 0
+  - 'no': 8
+    country: bel
+    fname: Alexander
+    lname: Lemmens
+    scores:
+      - 7
+      - 2
+      - 7
+      - 0
+  - 'no': 9
+    country: bel
+    fname: Wouter
+    lname: Verbeke
+    scores:
+      - 1
+      - 0
+      - 2
+      - 0
+  - 'no': 10
+    country: bel
+    fname: Andries
+    lname: Waelkens
+    scores:
+      - 3
+      - 2
+      - 6
+      - 5
+  - 'no': 1
+    country: lux
+    fname: Pierre
+    lname: Haas
+    scores:
+      - 7
+      - 2
+      - 5
+      - 1
+  - 'no': 2
+    country: lux
+    fname: Jingran
+    lname: Lin
+    scores:
+      - 7
+      - 1
+      - 1
+      - 4
+  - 'no': 3
+    country: lux
+    fname: Marc
+    lname: Sinner
+    scores:
+      - 7
+      - 2
+      - 0
+      - 3
+  - 'no': 4
+    country: lux
+    fname: Philippe
+    lname: Schramm
+    scores:
+      - 3
+      - 2
+      - 1
+      - 0
+  - 'no': 5
+    country: lux
+    fname: Grégoire
+    lname: Genest
+    scores:
+      - 1
+      - 0
+      - 1
+      - 2
+  - 'no': 6
+    country: lux
+    fname: Jérôme
+    lname: Urhausen
+    scores:
+      - 0
+      - 2
+      - 1
+      - 0
+  - 'no': 7
+    country: lux
+    fname: Eline
+    lname: Hentgen
+    scores:
+      - 1
+      - 0
+      - 1
+      - 0
+  - 'no': 8
+    country: lux
+    fname: Charel
+    lname: Eilenbecker
+    scores:
+      - 0
+      - 0
+      - 1
+      - 0
+  - 'no': 9
+    country: lux
+    fname: Sarah Elena Ivana
+    lname: Bosman
+    scores:
+      - 1
+      - 1
+      - 2
+      - 0
+  - 'no': 10
+    country: lux
+    fname: Luc
+    lname: Ohles
+    scores:
+      - 3
+      - 0
+      - 0
+      - 0
+  - 'no': 1
+    country: nld
+    fname: Wouter
+    lname: Berkelmans
+    scores:
+      - 7
+      - 7
+      - 7
+      - 3
+  - 'no': 2
+    country: nld
+    fname: Raymond
+    mname: van
+    lname: Bommel
+    scores:
+      - 7
+      - 7
+      - 7
+      - 7
+  - 'no': 3
+    country: nld
+    fname: Harm
+    lname: Campmans
+    scores:
+      - 4
+      - 1
+      - 2
+      - 0
+  - 'no': 4
+    country: nld
+    fname: Jelle
+    mname: van den
+    lname: Hooff
+    scores:
+      - 6
+      - 1
+      - 3
+      - 0
+  - 'no': 5
+    country: nld
+    fname: Madelon
+    mname: de
+    lname: Kemp
+    scores:
+      - 2
+      - 1
+      - 0
+      - 0
+  - 'no': 6
+    country: nld
+    fname: David
+    lname: Kok
+    scores:
+      - 7
+      - 1
+      - 2
+      - 0
+  - 'no': 7
+    country: nld
+    fname: Peter
+    lname: Koymans
+    scores:
+      - 4
+      - 1
+      - 1
+      - 0
+  - 'no': 8
+    country: nld
+    fname: Maarten
+    lname: Roelofsma
+    scores:
+      - 4
+      - 7
+      - 5
+      - 1
+  - 'no': 9
+    country: nld
+    fname: Wadim
+    lname: Sharshov
+    scores:
+      - 4
+      - 0
+      - 2
+      - 1
+  - 'no': 10
+    country: nld
+    fname: Jaap
+    lname: Wagenaar
+    scores:
+      - 4
+      - 1
+      - 2
+      - 0

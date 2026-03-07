@@ -1,0 +1,326 @@
+year: 2011
+location: Mersch
+country: lux
+thresholds:
+  bronze: 17
+  silver: 23
+  gold: 26
+honourableMentions: true
+info: |-
+  The third Benelux Mathematical Olympiad took place in Luxembourg from 6th to 8th May 2011. The teams arrived in the afternoon of Friday, 6th May and the Olympiad ended in the afternoon of Sunday, 8th May.
+
+  The paper was sat on Saturday morning in the annexe of the Lycée Classique de Diekirch in Mersch, where one of the Ersatz-IMOs took place in 1980. Teams lodged in the youth hostel in Eisenborn.
+
+  [Website](http://math.uni.lu/~olymp/bxmo.htm)
+problems:
+  - lang: en
+  - lang: fr
+  - lang: nl
+  - lang: zz
+delegations:
+  - country: bel
+    leader:
+      fname: Philippe
+      lname: Niederkorn
+    deputies:
+      - fname: Stijn
+        lname: Symens
+      - fname: Timothée
+        lname: Marquis
+  - country: lux
+    leader:
+      fname: Bernard
+      lname: Felten
+    deputies:
+      - fname: Philippe
+        lname: Schram
+      - fname: Carine
+        lname: Bartholomé
+      - fname: Mike
+        lname: Dostert
+  - country: nld
+    leader:
+      fname: Johan
+      lname: Konter
+    deputies:
+      - fname: Birgit
+        mname: van
+        lname: Dalen
+      - fname: Sietske
+        lname: Tacoma
+      - fname: Quintijn
+        lname: Puite
+participants:
+  - 'no': 1
+    country: bel
+    fname: Stijn
+    lname: Cambie
+    scores:
+      - 7
+      - 4
+      - 0
+      - 1
+  - 'no': 2
+    country: bel
+    fname: Victor
+    lname: De Baere
+    scores:
+      - 3
+      - 0
+      - 2
+      - 7
+  - 'no': 3
+    country: bel
+    fname: Elias
+    lname: Moons
+    scores:
+      - 6
+      - 0
+      - 0
+      - 4
+  - 'no': 4
+    country: bel
+    fname: Dieter
+    lname: Plessers
+    scores:
+      - 3
+      - 0
+      - 0
+      - 3
+  - 'no': 5
+    country: bel
+    fname: Tim
+    lname: Seynnaeve
+    scores:
+      - 6
+      - 7
+      - 7
+      - 6
+  - 'no': 6
+    country: bel
+    fname: Alexander
+    lname: Fisch
+    scores:
+      - 7
+      - 7
+      - 7
+      - 2
+  - 'no': 7
+    country: bel
+    fname: Victor
+    lname: Lecomte
+    scores:
+      - 2
+      - 3
+      - 7
+      - 0
+  - 'no': 8
+    country: bel
+    fname: Benoît
+    lname: Legat
+    scores:
+      - 6
+      - 6
+      - 3
+      - 3
+  - 'no': 9
+    country: bel
+    fname: François
+    lname: Staelens
+    scores:
+      - 7
+      - 2
+      - 7
+      - 3
+  - 'no': 10
+    country: bel
+    fname: Adrien
+    lname: Vandenschrick
+    scores:
+      - 3
+      - 0
+      - 5
+      - 3
+  - 'no': 1
+    country: lux
+    fname: Jérôme
+    lname: Urhausen
+    scores:
+      - 3
+      - 7
+      - 7
+      - 6
+  - 'no': 2
+    country: lux
+    fname: Christina
+    lname: Meyer
+    scores:
+      - 6
+      - 0
+      - 0
+      - 2
+  - 'no': 3
+    country: lux
+    fname: Nicolas
+    lname: Atten
+    scores:
+      - 3
+      - 0
+      - 1
+      - 2
+  - 'no': 4
+    country: lux
+    fname: Gilles
+    lname: Englebert
+    scores:
+      - 1
+      - 0
+      - 3
+      - 3
+  - 'no': 5
+    country: lux
+    fname: Philippe
+    lname: Scholtes
+    scores:
+      - 7
+      - 0
+      - 0
+      - 1
+  - 'no': 6
+    country: lux
+    fname: Grégoire
+    lname: Genest
+    scores:
+      - 6
+      - 7
+      - 5
+      - 6
+  - 'no': 7
+    country: lux
+    fname: Michel
+    lname: Thull
+    scores:
+      - 2
+      - 1
+      - 0
+      - 2
+  - 'no': 8
+    country: lux
+    fname: Carole
+    lname: Muller
+    scores:
+      - 0
+      - 1
+      - 0
+      - 3
+  - 'no': 9
+    country: lux
+    fname: Adrian
+    lname: Gheorghe
+    scores:
+      - 7
+      - 0
+      - 1
+      - 2
+  - 'no': 10
+    country: lux
+    fname: Maurice
+    lname: Hörold
+    scores:
+      - 7
+      - 0
+      - 0
+      - 0
+  - 'no': 1
+    country: nld
+    fname: Daniël
+    lname: Kroes
+    scores:
+      - 7
+      - 7
+      - 7
+      - 4
+  - 'no': 2
+    country: nld
+    fname: Guus
+    lname: Berkelmans
+    scores:
+      - 6
+      - 3
+      - 7
+      - 7
+  - 'no': 3
+    country: nld
+    fname: Jeroen
+    lname: Huijben
+    scores:
+      - 7
+      - 4
+      - 7
+      - 3
+  - 'no': 4
+    country: nld
+    fname: Jetze
+    lname: Zoethout
+    scores:
+      - 7
+      - 7
+      - 7
+      - 3
+  - 'no': 5
+    country: nld
+    fname: Madelon
+    mname: de
+    lname: Kemp
+    scores:
+      - 7
+      - 7
+      - 7
+      - 7
+  - 'no': 6
+    country: nld
+    fname: Merlijn
+    lname: Staps
+    scores:
+      - 7
+      - 7
+      - 7
+      - 7
+  - 'no': 7
+    country: nld
+    fname: Paul
+    mname: van
+    lname: Eekelen
+    scores:
+      - 7
+      - 7
+      - 7
+      - 3
+  - 'no': 8
+    country: nld
+    fname: Peter
+    lname: Gerlagh
+    scores:
+      - 6
+      - 2
+      - 7
+      - 2
+  - 'no': 9
+    country: nld
+    fname: Peter
+    mname: van
+    lname: Hintum
+    scores:
+      - 3
+      - 0
+      - 2
+      - 4
+  - 'no': 10
+    country: nld
+    fname: Jeroen
+    lname: Winkel
+    scores:
+      - 7
+      - 0
+      - 7
+      - 7

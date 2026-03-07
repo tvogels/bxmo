@@ -1,0 +1,313 @@
+year: 2025
+location: Liège
+country: bel
+thresholds:
+  bronze: 10
+  silver: 14
+  gold: 19
+honourableMentions: true
+info: |-
+  The 2025 edition of the BxMO took place in Liège from 25 to 27 April.
+
+  Organiser: Nicolas Franco, Chief Coordinator: Pierre-Alain Jacqmin 
+
+  [Website](https://omb.sbpm.be/bxmo2025/)
+problems:
+  - lang: en
+  - lang: fr
+  - lang: nl
+  - lang: zz
+delegations:
+  - country: bel
+    leader:
+      fname: Tijs
+      lname: Buggenhout
+    deputies:
+      - fname: François
+        lname: Thilmany
+      - fname: Luka
+        lname: Sebbag
+  - country: lux
+    leader:
+      fname: Bernard
+      lname: Felten
+    deputies:
+      - fname: Pascal
+        lname: Zeihen
+      - fname: Mike
+        lname: Dostert
+  - country: nld
+    leader:
+      fname: Ward
+      mname: van der
+      lname: Schoot
+    deputies:
+      - fname: Lars
+        lname: Pos
+      - fname: Daan
+        mname: de
+        lname: Groot
+participants:
+  - 'no': 1
+    country: bel
+    fname: Thomas
+    lname: Audenaert
+    scores:
+      - 3
+      - 1
+      - 7
+      - 2
+  - 'no': 2
+    country: bel
+    fname: Litsa
+    lname: Ceyssens
+    scores:
+      - 2
+      - 0
+      - 1
+      - 1
+  - 'no': 3
+    country: bel
+    fname: Mateo
+    lname: Claesen
+    scores:
+      - 7
+      - 0
+      - 7
+      - 0
+  - 'no': 4
+    country: bel
+    fname: Thibault
+    lname: Guignard
+    scores:
+      - 7
+      - 0
+      - 7
+      - 0
+  - 'no': 5
+    country: bel
+    fname: Enya
+    lname: Leroy
+    scores:
+      - 7
+      - 6
+      - 6
+      - 0
+  - 'no': 6
+    country: bel
+    fname: Elliot
+    lname: Nuyts
+    scores:
+      - 7
+      - 0
+      - 6
+      - 0
+  - 'no': 7
+    country: bel
+    fname: Samuel
+    lname: Nuyts
+    scores:
+      - 7
+      - 0
+      - 7
+      - 1
+  - 'no': 8
+    country: bel
+    fname: Arne
+    lname: Vanormelingen
+    scores:
+      - 0
+      - 0
+      - 0
+      - 7
+  - 'no': 9
+    country: bel
+    fname: Jonas
+    lname: Wulleman
+    scores:
+      - 3
+      - 0
+      - 1
+      - 0
+  - 'no': 10
+    country: bel
+    fname: Changzhi Michel
+    lname: Yang
+    scores:
+      - 1
+      - 6
+      - 7
+      - 1
+  - 'no': 1
+    country: lux
+    fname: Gabriel
+    lname: Baguenault
+    scores:
+      - 2
+      - 0
+      - 6
+      - 0
+  - 'no': 2
+    country: lux
+    fname: Saad
+    lname: Khan
+    scores:
+      - 1
+      - 0
+      - 6
+      - 0
+  - 'no': 3
+    country: lux
+    fname: Khalid
+    lname: Khan
+    scores:
+      - 7
+      - 2
+      - 7
+      - 1
+  - 'no': 4
+    country: lux
+    fname: Karel Wataru
+    lname: Meixner
+    scores:
+      - 0
+      - 0
+      - 0
+      - 0
+  - 'no': 5
+    country: lux
+    fname: Jakub
+    lname: Nowak
+    scores:
+      - 0
+      - 2
+      - 0
+      - 0
+  - 'no': 6
+    country: lux
+    fname: Arthur
+    lname: Seban
+    scores:
+      - 1
+      - 0
+      - 7
+      - 0
+  - 'no': 7
+    country: lux
+    fname: Kiah
+    lname: Shah
+    scores:
+      - 1
+      - 2
+      - 7
+      - 0
+  - 'no': 8
+    country: lux
+    fname: Hazem
+    lname: Shinof
+    scores:
+      - 0
+      - 2
+      - 0
+      - 0
+  - 'no': 9
+    country: lux
+    fname: Kinji
+    lname: Yoshida
+    scores:
+      - 1
+      - 0
+      - 7
+      - 0
+  - 'no': 1
+    country: nld
+    fname: Roel
+    lname: Alkemade
+    scores:
+      - 1
+      - 1
+      - 7
+      - 0
+  - 'no': 2
+    country: nld
+    fname: Boas
+    lname: Bakker
+    scores:
+      - 2
+      - 2
+      - 1
+      - 0
+  - 'no': 3
+    country: nld
+    fname: Josiah
+    mname: "'t"
+    lname: Hart
+    scores:
+      - 7
+      - 6
+      - 7
+      - 1
+  - 'no': 4
+    country: nld
+    fname: Casper
+    lname: Heimel
+    scores:
+      - 7
+      - 7
+      - 7
+      - 0
+  - 'no': 5
+    country: nld
+    fname: Leonard
+    lname: Jonasse
+    scores:
+      - 3
+      - 5
+      - 2
+      - 2
+  - 'no': 6
+    country: nld
+    fname: Yorick
+    lname: Nap
+    scores:
+      - 1
+      - 7
+      - 2
+      - 0
+  - 'no': 7
+    country: nld
+    fname: Tobias
+    lname: Piet
+    scores:
+      - 7
+      - 2
+      - 2
+      - 0
+  - 'no': 8
+    country: nld
+    fname: Lucas
+    mname: van de
+    lname: Sande
+    scores:
+      - 7
+      - 1
+      - 6
+      - 0
+  - 'no': 9
+    country: nld
+    fname: Colin
+    lname: Smeets
+    scores:
+      - 3
+      - 0
+      - 1
+      - 1
+  - 'no': 10
+    country: nld
+    fname: Dennis
+    lname: Zhang
+    scores:
+      - 1
+      - 2
+      - 1
+      - 0

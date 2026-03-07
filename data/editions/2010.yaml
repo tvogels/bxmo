@@ -1,0 +1,566 @@
+year: 2010
+location: Amsterdam
+country: nld
+thresholds:
+  bronze: 13
+  silver: 17
+  gold: 22
+honourableMentions: true
+info: |-
+  The second BxMO was held 23-25 April 2010. For this edition three guest countries were invited: Slovenia, Spain and Switzerland. In this way the host country the Netherlands could have a try-out for IMO2011. 
+
+  The BxMO was held in Novotel Amsterdam City, the same hotel that the IMO would take place the next year.
+
+  [Website](http://www.wiskundeolympiade.nl/bxmo)
+problems:
+  - lang: de
+  - lang: en
+  - lang: es
+  - lang: fr
+  - lang: nl
+  - lang: sl
+  - lang: zz
+delegations:
+  - country: bel
+    leader:
+      fname: Philippe
+      lname: Niederkorn
+    deputies:
+      - fname: Tom
+        lname: De Medts
+      - fname: Pierre-Emmanuel
+        lname: Caprace
+  - country: esp
+    leader:
+      fname: José Luis
+      lname: Díaz-Barrero
+    deputies:
+      - fname: Luis
+        lname: Hernández
+      - fname: Elisa
+        lname: Lorenzo
+  - country: lux
+    leader:
+      fname: Charles
+      lname: Leytem
+    deputies:
+      - fname: Bernard
+        lname: Felten
+      - fname: Marc
+        lname: Kaufmann
+  - country: nld
+    leader:
+      fname: Quintijn
+      lname: Puite
+    deputies:
+      - fname: Birgit
+        mname: van
+        lname: Dalen
+      - fname: Sietske
+        lname: Tacoma
+      - fname: Johan
+        lname: Konter
+  - country: sui
+    leader:
+      fname: Dimitri
+      lname: Wyss
+    deputies:
+      - fname: Rafael
+        lname: Guglielmetti
+      - fname: Markus
+        lname: Sprecher
+  - country: svn
+    leader:
+      fname: Klemen
+      lname: Šivic
+    deputies:
+      - fname: Kris
+        lname: Stopar
+participants:
+  - 'no': 1
+    country: bel
+    fname: Loïc
+    lname: Burger
+    scores:
+      - 3
+      - 7
+      - 2
+      - 7
+  - 'no': 2
+    country: bel
+    fname: Antoine
+    lname: Dujardin
+    scores:
+      - 7
+      - 2
+      - 7
+      - 2
+  - 'no': 3
+    country: bel
+    fname: Benoît
+    lname: Legat
+    scores:
+      - 7
+      - 2
+      - 0
+      - 6
+  - 'no': 4
+    country: bel
+    fname: Sophie
+    lname: Peng-Casavecchia
+    scores:
+      - 2
+      - 1
+      - 0
+      - 1
+  - 'no': 5
+    country: bel
+    fname: François
+    lname: Staelens
+    scores:
+      - 7
+      - 2
+      - 0
+      - 0
+  - 'no': 6
+    country: bel
+    fname: Stijn
+    lname: Cambie
+    scores:
+      - 7
+      - 4
+      - 1
+      - 7
+  - 'no': 7
+    country: bel
+    fname: Heide
+    lname: Goethals
+    scores:
+      - 3
+      - 1
+      - 0
+      - 1
+  - 'no': 8
+    country: bel
+    fname: Arne
+    lname: Meulemans
+    scores:
+      - 3
+      - 1
+      - 0
+      - 3
+  - 'no': 9
+    country: bel
+    fname: Tim
+    lname: Seynnaeve
+    scores:
+      - 6
+      - 2
+      - 7
+      - 0
+  - 'no': 10
+    country: bel
+    fname: Pieter
+    lname: Spaas
+    scores:
+      - 7
+      - 3
+      - 0
+      - 3
+  - 'no': 1
+    country: esp
+    fname: Ander
+    lname: Lamaison
+    scores:
+      - 7
+      - 4
+      - 7
+      - 7
+  - 'no': 2
+    country: esp
+    fname: Moisés
+    lname: Herradón
+    scores:
+      - 3
+      - 7
+      - 7
+      - 5
+  - 'no': 3
+    country: esp
+    fname: Pablo
+    lname: Boixeda
+    scores:
+      - 7
+      - 7
+      - 3
+      - 1
+  - 'no': 4
+    country: esp
+    fname: Guillem
+    lname: Alsina
+    scores:
+      - 3
+      - 2
+      - 0
+      - 4
+  - 'no': 5
+    country: esp
+    fname: Óscar
+    lname: Rivero
+    scores:
+      - 7
+      - 7
+      - 4
+      - 5
+  - 'no': 6
+    country: esp
+    fname: Ferran
+    lname: Alet
+    scores:
+      - 3
+      - 3
+      - 0
+      - 2
+  - 'no': 7
+    country: esp
+    fname: Darío
+    lname: Nieuwenhuis
+    scores:
+      - 1
+      - 2
+      - 2
+      - 0
+  - 'no': 8
+    country: esp
+    fname: José
+    lname: Sebastián
+    scores:
+      - 0
+      - 2
+      - 0
+      - 4
+  - 'no': 9
+    country: esp
+    fname: Jaime
+    lname: Mendizábal
+    scores:
+      - 7
+      - 1
+      - 0
+      - 0
+  - 'no': 1
+    country: lux
+    fname: Grégoire
+    lname: Genest
+    scores:
+      - 6
+      - 2
+      - 5
+      - 4
+  - 'no': 2
+    country: lux
+    fname: Philippe
+    lname: Schram
+    scores:
+      - 7
+      - 7
+      - 1
+      - 5
+  - 'no': 3
+    country: lux
+    fname: Steve
+    lname: Muller
+    scores:
+      - 0
+      - 6
+      - 7
+      - 0
+  - 'no': 4
+    country: lux
+    fname: Nicolas
+    lname: Atten
+    scores:
+      - 2
+      - 0
+      - 0
+      - 1
+  - 'no': 5
+    country: lux
+    fname: Jérôme
+    lname: Urhausen
+    scores:
+      - 7
+      - 3
+      - 0
+      - 0
+  - 'no': 6
+    country: lux
+    fname: Gilles
+    lname: Neyens
+    scores:
+      - 0
+      - 2
+      - 7
+      - 1
+  - 'no': 7
+    country: lux
+    fname: Adrian
+    lname: Gheorghe
+    scores:
+      - 0
+      - 0
+      - 0
+      - 1
+  - 'no': 8
+    country: lux
+    fname: Philippe
+    lname: Scholtes
+    scores:
+      - 0
+      - 0
+      - 0
+      - 0
+  - 'no': 9
+    country: lux
+    fname: Pol
+    lname: Duhr
+    scores:
+      - 0
+      - 0
+      - 5
+      - 0
+  - 'no': 1
+    country: nld
+    fname: Guus
+    lname: Berkelmans
+    scores:
+      - 2
+      - 5
+      - 2
+      - 2
+  - 'no': 2
+    country: nld
+    fname: Harm
+    lname: Campmans
+    scores:
+      - 3
+      - 2
+      - 2
+      - 3
+  - 'no': 3
+    country: nld
+    fname: Ragnar
+    lname: Groot Koerkamp
+    scores:
+      - 3
+      - 7
+      - 1
+      - 1
+  - 'no': 4
+    country: nld
+    fname: Jeroen
+    lname: Huijben
+    scores:
+      - 6
+      - 5
+      - 1
+      - 4
+  - 'no': 5
+    country: nld
+    fname: Madelon
+    mname: de
+    lname: Kemp
+    scores:
+      - 3
+      - 3
+      - 4
+      - 1
+  - 'no': 6
+    country: nld
+    fname: David
+    lname: Kok
+    scores:
+      - 3
+      - 2
+      - 7
+      - 1
+  - 'no': 7
+    country: nld
+    fname: Daniël
+    lname: Kroes
+    scores:
+      - 6
+      - 7
+      - 2
+      - 4
+  - 'no': 8
+    country: nld
+    fname: Merlijn
+    lname: Staps
+    scores:
+      - 7
+      - 7
+      - 6
+      - 7
+  - 'no': 9
+    country: nld
+    fname: Niels
+    lname: Voorneveld
+    scores:
+      - 6
+      - 2
+      - 4
+      - 2
+  - 'no': 10
+    country: nld
+    fname: Henk-Jaap
+    lname: Wagenaar
+    scores:
+      - 2
+      - 6
+      - 0
+      - 2
+  - 'no': 1
+    country: sui
+    fname: Laura
+    lname: Gremion
+    scores:
+      - 1
+      - 1
+      - 2
+      - 3
+  - 'no': 2
+    country: sui
+    fname: Clemens
+    lname: Pohle
+    scores:
+      - 7
+      - 3
+      - 3
+      - 4
+  - 'no': 3
+    country: sui
+    fname: Pascal
+    lname: Su
+    scores:
+      - 7
+      - 2
+      - 6
+      - 1
+  - 'no': 4
+    country: sui
+    fname: Cyril
+    lname: Frei
+    scores:
+      - 5
+      - 4
+      - 0
+      - 0
+  - 'no': 5
+    country: sui
+    fname: Jürg
+    lname: Bachmann
+    scores:
+      - 7
+      - 3
+      - 1
+      - 2
+  - 'no': 6
+    country: sui
+    fname: Raphael
+    lname: Schumacher
+    scores:
+      - 3
+      - 2
+      - 0
+      - 1
+  - 'no': 7
+    country: sui
+    fname: Nikola
+    lname: Djokic
+    scores:
+      - 7
+      - 6
+      - 3
+      - 1
+  - 'no': 8
+    country: sui
+    fname: Alain
+    lname: Vaucher
+    scores:
+      - 7
+      - 3
+      - 3
+      - 2
+  - 'no': 1
+    country: svn
+    fname: Matej
+    lname: Aleksandrov
+    scores:
+      - 7
+      - 4
+      - 7
+      - 7
+  - 'no': 2
+    country: svn
+    fname: Matjaž
+    lname: Leonardis
+    scores:
+      - 7
+      - 7
+      - 2
+      - 5
+  - 'no': 3
+    country: svn
+    fname: Tomaž
+    lname: Stepišnik Perdih
+    scores:
+      - 2
+      - 7
+      - 6
+      - 1
+  - 'no': 4
+    country: svn
+    fname: Aleš
+    lname: Omerzel
+    scores:
+      - 7
+      - 3
+      - 1
+      - 3
+  - 'no': 5
+    country: svn
+    fname: Nik
+    lname: Jazbinšek
+    scores:
+      - 3
+      - 3
+      - 6
+      - 1
+  - 'no': 6
+    country: svn
+    fname: Matej
+    lname: Mlinarič
+    scores:
+      - 3
+      - 3
+      - 1
+      - 3
+  - 'no': 7
+    country: svn
+    fname: Veno
+    lname: Mramor
+    scores:
+      - 7
+      - 2
+      - 1
+      - 2
+  - 'no': 8
+    country: svn
+    fname: Neža
+    lname: Žager Korenjak
+    scores:
+      - 0
+      - 2
+      - 3
+      - 2

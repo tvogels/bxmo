@@ -1,0 +1,423 @@
+year: 2020
+location: Virtual
+country: bel
+thresholds:
+  bronze: 11
+  silver: 18
+  gold: 25
+honourableMentions: true
+info: The 2020 edition of the BxMO was planned to be held in Belgium, but took place as a purely virtual event because of the COVID-19 pandemic. It was held on 2 and 3 May.
+problems:
+  - lang: en
+  - lang: fr
+  - lang: nl
+  - lang: sw
+  - lang: zz
+delegations:
+  - country: bel
+    leader:
+      fname: Nicolas
+      lname: Radu
+    deputies:
+      - fname: Bart
+        lname: Michels
+      - fname: Corentin
+        lname: Bodart
+      - fname: Tijs
+        lname: Buggenhout
+  - country: lux
+    leader:
+      fname: Bernard
+      lname: Felten
+    deputies:
+      - fname: Mike
+        lname: Dostert
+      - fname: Pascal
+        lname: Zeihen
+      - fname: Pierre
+        lname: Haas, Philippe Schram
+  - country: nld
+    leader:
+      fname: Jeroen
+      lname: Huijben
+    deputies:
+      - fname: Ward
+        mname: van der
+        lname: Schoot
+      - fname: Wietze
+        lname: Koops
+  - country: swe
+    leader:
+      fname: Paul
+      lname: Vaderlind
+    deputies:
+      - fname: Victor
+        lname: Ufnarovski
+      - fname: Hugo
+        lname: Eberhart
+participants:
+  - 'no': 1
+    country: bel
+    fname: Zhichang
+    lname: Chen
+    scores:
+      - 4
+      - 7
+      - 7
+      - 0
+  - 'no': 2
+    country: bel
+    fname: Tom
+    lname: Clara
+    scores:
+      - 0
+      - 7
+      - 0
+      - 2
+  - 'no': 3
+    country: bel
+    fname: Daniel
+    lname: Cortild
+    scores:
+      - 7
+      - 7
+      - 7
+      - 4
+  - 'no': 4
+    country: bel
+    fname: Jonas
+    lname: De Schouwer
+    scores:
+      - 6
+      - 7
+      - 7
+      - 7
+  - 'no': 5
+    country: bel
+    fname: Marie
+    lname: Determe
+    scores:
+      - 0
+      - 0
+      - 0
+      - 0
+  - 'no': 6
+    country: bel
+    fname: Rutger
+    lname: Dobbelaere
+    scores:
+      - 0
+      - 7
+      - 1
+      - 0
+  - 'no': 7
+    country: bel
+    fname: Olivier
+    lname: Fays
+    scores:
+      - 2
+      - 7
+      - 7
+      - 0
+  - 'no': 8
+    country: bel
+    fname: Traian
+    mname: Florin
+    lname: Sirbu
+    scores:
+      - 0
+      - 0
+      - 0
+      - 0
+  - 'no': 9
+    country: bel
+    fname: Pieter
+    lname: Van Steenweghen
+    scores:
+      - 3
+      - 7
+      - 0
+      - 0
+  - 'no': 10
+    country: bel
+    fname: Brecht
+    lname: Verbeken
+    scores:
+      - 2
+      - 3
+      - 1
+      - 2
+  - 'no': 1
+    country: lux
+    fname: Oscar
+    lname: Van Bommel
+    scores:
+      - 0
+      - 4
+      - 0
+      - 0
+  - 'no': 2
+    country: lux
+    fname: Anthony
+    lname: Roizin
+    scores:
+      - 3
+      - 0
+      - 0
+      - 0
+  - 'no': 3
+    country: lux
+    fname: Ulysse
+    lname: Villedey
+    scores:
+      - 3
+      - 7
+      - 0
+      - 0
+  - 'no': 4
+    country: lux
+    fname: Carmelo
+    mname: Simon
+    lname: Soria
+    scores:
+      - 0
+      - 0
+      - 0
+      - 0
+  - 'no': 5
+    country: lux
+    fname: Vincent
+    lname: Toor-Azorin
+    scores:
+      - 0
+      - 6
+      - 0
+      - 0
+  - 'no': 6
+    country: lux
+    fname: Eunju
+    lname: Moon
+    scores:
+      - 3
+      - 7
+      - 0
+      - 0
+  - 'no': 7
+    country: lux
+    fname: Karaahmet
+    lname: Ege
+    scores:
+      - 0
+      - 1
+      - 0
+      - 0
+  - 'no': 8
+    country: lux
+    fname: Angelina
+    lname: Kysil
+    scores:
+      - 1
+      - 2
+      - 7
+      - 0
+  - 'no': 9
+    country: lux
+    fname: Sasha
+    lname: Biryukov
+    scores:
+      - 0
+      - 3
+      - 7
+      - 0
+  - 'no': 10
+    country: lux
+    fname: Pierre
+    lname: Roth
+    scores:
+      - 0
+      - 0
+      - 0
+      - 0
+  - 'no': 1
+    country: nld
+    fname: Jelle
+    lname: Bloemendaal
+    scores:
+      - 3
+      - 7
+      - 7
+      - 4
+  - 'no': 2
+    country: nld
+    fname: Merijn
+    mname: van
+    lname: Delft
+    scores:
+      - 1
+      - 7
+      - 1
+      - 4
+  - 'no': 3
+    country: nld
+    fname: Kevin
+    mname: van
+    lname: Dijk
+    scores:
+      - 3
+      - 7
+      - 1
+      - 0
+  - 'no': 4
+    country: nld
+    fname: Hylke
+    lname: Hoogeveen
+    scores:
+      - 7
+      - 7
+      - 1
+      - 0
+  - 'no': 5
+    country: nld
+    fname: Rafaël
+    lname: Houkes
+    scores:
+      - 7
+      - 7
+      - 7
+      - 5
+  - 'no': 6
+    country: nld
+    fname: Casper
+    lname: Madlener
+    scores:
+      - 7
+      - 7
+      - 2
+      - 7
+  - 'no': 7
+    country: nld
+    fname: Tjeerd
+    lname: Morsch
+    scores:
+      - 6
+      - 6
+      - 6
+      - 2
+  - 'no': 8
+    country: nld
+    fname: Charlie
+    lname: Tang
+    scores:
+      - 3
+      - 2
+      - 7
+      - 0
+  - 'no': 9
+    country: nld
+    fname: Kees
+    mname: den
+    lname: Tex
+    scores:
+      - 1
+      - 6
+      - 1
+      - 0
+  - 'no': 10
+    country: nld
+    fname: Thian
+    lname: Tromp
+    scores:
+      - 6
+      - 1
+      - 4
+      - 0
+  - 'no': 1
+    country: swe
+    fname: Layth
+    lname: Basbous
+    scores:
+      - 4
+      - 0
+      - 6
+      - 0
+  - 'no': 2
+    country: swe
+    fname: Hugo
+    lname: Bäckman
+    scores:
+      - 2
+      - 0
+      - 0
+      - 1
+  - 'no': 3
+    country: swe
+    fname: Lycka
+    lname: Drakengren
+    scores:
+      - 4
+      - 7
+      - 7
+      - 0
+  - 'no': 4
+    country: swe
+    fname: David
+    lname: Engström
+    scores:
+      - 5
+      - 7
+      - 0
+      - 7
+  - 'no': 5
+    country: swe
+    fname: Kevin
+    lname: Haagensen Strömberg
+    scores:
+      - 3
+      - 5
+      - 0
+      - 0
+  - 'no': 6
+    country: swe
+    fname: Ivar
+    lname: Källström
+    scores:
+      - 2
+      - 5
+      - 0
+      - 0
+  - 'no': 7
+    country: swe
+    fname: Viktor
+    lname: Lundqvist
+    scores:
+      - 0
+      - 7
+      - 0
+      - 2
+  - 'no': 8
+    country: swe
+    fname: Rebecka
+    lname: Mårtensson
+    scores:
+      - 0
+      - 7
+      - 0
+      - 0
+  - 'no': 9
+    country: swe
+    fname: Ferdinand
+    lname: Rönngren
+    scores:
+      - 2
+      - 0
+      - 1
+      - 1
+  - 'no': 10
+    country: swe
+    fname: Nils
+    lname: Thorin
+    scores:
+      - 0
+      - 7
+      - 0
+      - 0

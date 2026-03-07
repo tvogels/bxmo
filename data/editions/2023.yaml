@@ -1,0 +1,318 @@
+year: 2023
+location: Esch-sur-Alzette
+country: lux
+thresholds:
+  bronze: 11
+  silver: 18
+  gold: 27
+honourableMentions: true
+info: 'The 2023 edition of the BxMO took place in Esch-sur-Alzette (Luxembourg) from 5 to 7 May. Organising committee: Claudine Bausch, Tun De Carolis, Martine Deprez, Mike Dostert, Pascal Zeihen'
+problems:
+  - lang: en
+  - lang: fr
+  - lang: nl
+  - lang: zz
+delegations:
+  - country: bel
+    leader:
+      fname: Tijs
+      lname: Buggenhout
+    deputies:
+      - fname: Nicolas
+        lname: Radu
+      - fname: Jonas
+        lname: De Schouwer
+  - country: lux
+    leader:
+      fname: Bernard
+      lname: Felten
+    deputies:
+      - fname: Robert
+        lname: Freud
+      - fname: Liz
+        lname: Anastasi
+  - country: nld
+    leader:
+      fname: Dirk
+      mname: van
+      lname: Bree
+    deputies:
+      - fname: Ward
+        mname: van der
+        lname: Schoot
+      - fname: Kevin
+        mname: van
+        lname: Dijk
+participants:
+  - 'no': 1
+    country: bel
+    fname: Robin
+    lname: Antoine
+    scores:
+      - 7
+      - 7
+      - 1
+      - 7
+  - 'no': 2
+    country: bel
+    fname: Jonas
+    lname: Boeykens
+    scores:
+      - 5
+      - 5
+      - 0
+      - 1
+  - 'no': 3
+    country: bel
+    fname: Jul
+    lname: Comhaire
+    scores:
+      - 3
+      - 7
+      - 0
+      - 1
+  - 'no': 4
+    country: bel
+    fname: Joseph
+    lname: Deraemaeker
+    scores:
+      - 3
+      - 5
+      - 0
+      - 3
+  - 'no': 5
+    country: bel
+    fname: Pierre Akin
+    lname: Dürrüoglu
+    scores:
+      - 7
+      - 6
+      - 7
+      - 7
+  - 'no': 6
+    country: bel
+    fname: Tibe
+    lname: Fannes
+    scores:
+      - 3
+      - 0
+      - 0
+      - 1
+  - 'no': 7
+    country: bel
+    fname: Zhiyi
+    lname: Luo
+    scores:
+      - 7
+      - 7
+      - 0
+      - 4
+  - 'no': 8
+    country: bel
+    fname: Samuel
+    lname: Nuyts
+    scores:
+      - 2
+      - 3
+      - 0
+      - 1
+  - 'no': 9
+    country: bel
+    fname: Luka
+    lname: Sebbag
+    scores:
+      - 7
+      - 7
+      - 0
+      - 6
+  - 'no': 10
+    country: bel
+    fname: Akram
+    lname: Zakine
+    scores:
+      - 7
+      - 4
+      - 7
+      - 2
+  - 'no': 1
+    country: lux
+    fname: Michèle
+    lname: Voncken
+    scores:
+      - 1
+      - 2
+      - 0
+      - 0
+  - 'no': 2
+    country: lux
+    fname: Florian
+    lname: Gauzès
+    scores:
+      - 0
+      - 2
+      - 0
+      - 1
+  - 'no': 3
+    country: lux
+    fname: Maia
+    lname: Tanasa
+    scores:
+      - 1
+      - 0
+      - 0
+      - 2
+  - 'no': 4
+    country: lux
+    fname: Louise
+    lname: Bernier
+    scores:
+      - 2
+      - 0
+      - 0
+      - 1
+  - 'no': 5
+    country: lux
+    fname: Steve
+    lname: Mendeleev
+    scores:
+      - 2
+      - 0
+      - 0
+      - 0
+  - 'no': 6
+    country: lux
+    fname: Gabriel-Francis
+    lname: Harding
+    scores:
+      - 0
+      - 0
+      - 0
+      - 1
+  - 'no': 7
+    country: lux
+    fname: Ilyes
+    lname: Klai
+    scores:
+      - 4
+      - 0
+      - 0
+      - 0
+  - 'no': 8
+    country: lux
+    fname: Mikhail
+    lname: Zapolskiy
+    scores:
+      - 0
+      - 1
+      - 0
+      - 1
+  - 'no': 9
+    country: lux
+    fname: Kiah
+    lname: Shah
+    scores:
+      - 1
+      - 2
+      - 0
+      - 1
+  - 'no': 10
+    country: lux
+    fname: Patrick
+    lname: Weiser
+    scores:
+      - 1
+      - 0
+      - 0
+      - 0
+  - 'no': 1
+    country: nld
+    fname: Lance
+    lname: Bakker
+    scores:
+      - 7
+      - 7
+      - 7
+      - 7
+  - 'no': 2
+    country: nld
+    fname: Bas
+    lname: Capel
+    scores:
+      - 4
+      - 7
+      - 0
+      - 2
+  - 'no': 3
+    country: nld
+    fname: Daan
+    mname: de
+    lname: Groot
+    scores:
+      - 4
+      - 3
+      - 0
+      - 7
+  - 'no': 4
+    country: nld
+    fname: Felix
+    lname: Hamoen
+    scores:
+      - 2
+      - 7
+      - 0
+      - 2
+  - 'no': 5
+    country: nld
+    fname: Naïm
+    lname: Hofstede
+    scores:
+      - 2
+      - 7
+      - 0
+      - 3
+  - 'no': 6
+    country: nld
+    fname: Mads
+    lname: Kok
+    scores:
+      - 7
+      - 7
+      - 2
+      - 7
+  - 'no': 7
+    country: nld
+    fname: Ilkka
+    lname: Kramer
+    scores:
+      - 1
+      - 7
+      - 0
+      - 1
+  - 'no': 8
+    country: nld
+    fname: Yanniek
+    lname: Nitescu
+    scores:
+      - 3
+      - 0
+      - 6
+      - 3
+  - 'no': 9
+    country: nld
+    fname: Ryan
+    lname: Staal
+    scores:
+      - 7
+      - 2
+      - 0
+      - 1
+  - 'no': 10
+    country: nld
+    fname: Jorik
+    mname: van der
+    lname: Stouwe
+    scores:
+      - 2
+      - 7
+      - 0
+      - 1

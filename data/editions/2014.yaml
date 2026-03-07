@@ -1,0 +1,322 @@
+year: 2014
+location: Brugge
+country: bel
+thresholds:
+  bronze: 11
+  silver: 15
+  gold: 20
+honourableMentions: false
+info: |-
+  The sixth edition of the Benelux Mathematical Olympiad (BxMO) took place from 2 to 4 May in Bruges.
+
+  Bruges is one of the most beautiful cities of Belgium. Worldwide Bruges is known as "The Venice of the North" and its specialities are lace and delicious chocolate. Since the year 2000, the historical centre has been added to the World Heritage List of Unesco.
+
+   
+
+  [Website](http://www.BxMO.be)
+problems:
+  - lang: en
+  - lang: fr
+  - lang: nl
+  - lang: zz
+delegations:
+  - country: bel
+    leader:
+      fname: Christophe
+      lname: Debry
+    deputies:
+      - fname: Nicolas
+        lname: Radu
+      - fname: Pierre-Alain
+        lname: Jacqmin
+  - country: lux
+    leader:
+      fname: Charles
+      lname: Leytem
+    deputies:
+      - fname: Bernard
+        lname: Felten
+      - fname: Pascal
+        lname: Zeihen
+  - country: nld
+    leader:
+      fname: Quintijn
+      lname: Puite
+    deputies:
+      - fname: Milan
+        lname: Lopuhaä
+      - fname: Daniël
+        lname: Kroes
+participants:
+  - 'no': 1
+    country: bel
+    fname: Pablo
+    lname: Bustillo Vazquez
+    scores:
+      - 2
+      - 6
+      - 5
+      - 0
+  - 'no': 2
+    country: bel
+    fname: Antoine
+    lname: Dupuis
+    scores:
+      - 3
+      - 7
+      - 5
+      - 0
+  - 'no': 3
+    country: bel
+    fname: Alexander
+    lname: Geldhof
+    scores:
+      - 7
+      - 4
+      - 0
+      - 0
+  - 'no': 4
+    country: bel
+    fname: France
+    lname: Gheeraert
+    scores:
+      - 1
+      - 4
+      - 0
+      - 0
+  - 'no': 5
+    country: bel
+    fname: Jef
+    lname: Laga
+    scores:
+      - 7
+      - 1
+      - 7
+      - 2
+  - 'no': 6
+    country: bel
+    fname: Corentin
+    lname: Bodart
+    scores:
+      - 7
+      - 4
+      - 6
+      - 0
+  - 'no': 7
+    country: bel
+    fname: Klaas
+    lname: Parmentier
+    scores:
+      - 7
+      - 4
+      - 0
+      - 0
+  - 'no': 8
+    country: bel
+    fname: Léo
+    lname: Schelstraete
+    scores:
+      - 2
+      - 4
+      - 0
+      - 0
+  - 'no': 9
+    country: bel
+    fname: Jeroen
+    lname: Van Hautte
+    scores:
+      - 4
+      - 0
+      - 5
+      - 0
+  - 'no': 10
+    country: bel
+    fname: Art
+    lname: Waterschoot
+    scores:
+      - 4
+      - 4
+      - 0
+      - 1
+  - 'no': 1
+    country: lux
+    fname: Andreas
+    lname: Bally
+    scores:
+      - 0
+      - 4
+      - 0
+      - 0
+  - 'no': 2
+    country: lux
+    fname: Alain
+    lname: Bertemes
+    scores:
+      - 2
+      - 1
+      - 0
+      - 0
+  - 'no': 3
+    country: lux
+    fname: Gilles
+    lname: Englebert
+    scores:
+      - 7
+      - 7
+      - 6
+      - 1
+  - 'no': 4
+    country: lux
+    fname: Pierre
+    lname: Kreins
+    scores:
+      - 0
+      - 1
+      - 0
+      - 0
+  - 'no': 5
+    country: lux
+    fname: Christina
+    lname: Meyer
+    scores:
+      - 5
+      - 4
+      - 3
+      - 0
+  - 'no': 6
+    country: lux
+    fname: Nadine
+    lname: Müller
+    scores:
+      - 0
+      - 0
+      - 0
+      - 0
+  - 'no': 7
+    country: lux
+    fname: Philippe
+    lname: Roukoz
+    scores:
+      - 0
+      - 0
+      - 0
+      - 0
+  - 'no': 8
+    country: lux
+    fname: Nico
+    lname: Thilmany
+    scores:
+      - 0
+      - 2
+      - 0
+      - 0
+  - 'no': 9
+    country: lux
+    fname: Charel
+    lname: Thull
+    scores:
+      - 7
+      - 4
+      - 0
+      - 0
+  - 'no': 10
+    country: lux
+    fname: Tara
+    lname: Trauthwein
+    scores:
+      - 0
+      - 2
+      - 0
+      - 0
+  - 'no': 1
+    country: nld
+    fname: Tysger
+    lname: Boelens
+    scores:
+      - 7
+      - 7
+      - 3
+      - 3
+  - 'no': 2
+    country: nld
+    fname: Yuhui
+    lname: Cheng
+    scores:
+      - 5
+      - 4
+      - 0
+      - 0
+  - 'no': 3
+    country: nld
+    fname: Koen
+    lname: Doodeman
+    scores:
+      - 2
+      - 1
+      - 4
+      - 0
+  - 'no': 4
+    country: nld
+    fname: Cas
+    lname: Kraan
+    scores:
+      - 7
+      - 4
+      - 4
+      - 0
+  - 'no': 5
+    country: nld
+    fname: Matthew
+    lname: Maat
+    scores:
+      - 7
+      - 2
+      - 2
+      - 0
+  - 'no': 6
+    country: nld
+    fname: Peter
+    mname: van der
+    lname: Plas
+    scores:
+      - 3
+      - 4
+      - 0
+      - 0
+  - 'no': 7
+    country: nld
+    fname: Sander
+    lname: Taams
+    scores:
+      - 4
+      - 3
+      - 0
+      - 0
+  - 'no': 8
+    country: nld
+    fname: Bas
+    lname: Verseveldt
+    scores:
+      - 6
+      - 7
+      - 6
+      - 1
+  - 'no': 9
+    country: nld
+    fname: Jorke
+    mname: de
+    lname: Vlas
+    scores:
+      - 7
+      - 0
+      - 6
+      - 2
+  - 'no': 10
+    country: nld
+    fname: Bob
+    lname: Zwetsloot
+    scores:
+      - 5
+      - 3
+      - 1
+      - 2

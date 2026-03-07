@@ -1,0 +1,318 @@
+year: 2012
+location: Namur
+country: bel
+thresholds:
+  bronze: 10
+  silver: 14
+  gold: 21
+honourableMentions: true
+info: |-
+  The 2012 edition of the BxMO took place in Belgium, at the cultural center Marcel Hicter "La Marlagne" in Wépion-Namur, from 20 to 22 April.
+
+  [Website](http://omb.sbpm.be/bxmo2012/)
+problems:
+  - lang: en
+  - lang: fr
+  - lang: nl
+  - lang: zz
+delegations:
+  - country: bel
+    leader:
+      fname: Stijn
+      lname: Symens
+    deputies:
+      - fname: Pascal
+        lname: Dupont
+      - fname: Peter
+        lname: Vandendriessche
+  - country: lux
+    leader:
+      fname: Charles
+      lname: Leytem
+    deputies:
+      - fname: Bernard
+        lname: Felten
+      - fname: Mike
+        lname: Dostert
+  - country: nld
+    leader:
+      fname: Johan
+      lname: Konter
+    deputies:
+      - fname: Birgit
+        mname: van
+        lname: Dalen
+      - fname: Julian
+        lname: Lyczak
+participants:
+  - 'no': 1
+    country: bel
+    fname: Stijn
+    lname: Cambie
+    scores:
+      - 7
+      - 7
+      - 1
+      - 3
+  - 'no': 2
+    country: bel
+    fname: Steven
+    lname: Colleman
+    scores:
+      - 6
+      - 1
+      - 0
+      - 1
+  - 'no': 3
+    country: bel
+    fname: Élise
+    lname: Delhez
+    scores:
+      - 7
+      - 3
+      - 0
+      - 1
+  - 'no': 4
+    country: bel
+    fname: Gerwin
+    lname: Dox
+    scores:
+      - 6
+      - 6
+      - 0
+      - 3
+  - 'no': 5
+    country: bel
+    fname: Thorvald
+    lname: Dox
+    scores:
+      - 7
+      - 1
+      - 0
+      - 2
+  - 'no': 6
+    country: bel
+    fname: Antoine
+    lname: Dupuis
+    scores:
+      - 7
+      - 0
+      - 0
+      - 2
+  - 'no': 7
+    country: bel
+    fname: Alexander
+    lname: Fisch
+    scores:
+      - 7
+      - 6
+      - 7
+      - 3
+  - 'no': 8
+    country: bel
+    fname: Sophie
+    lname: Peng-Casavecchia
+    scores:
+      - 7
+      - 1
+      - 0
+      - 3
+  - 'no': 9
+    country: bel
+    fname: Dieter
+    lname: Plessers
+    scores:
+      - 6
+      - 1
+      - 0
+      - 3
+  - 'no': 10
+    country: bel
+    fname: Adrien
+    lname: Vandenschrick
+    scores:
+      - 7
+      - 1
+      - 0
+      - 2
+  - 'no': 1
+    country: lux
+    fname: Ben
+    lname: Mirgain
+    scores:
+      - 7
+      - 0
+      - 0
+      - 1
+  - 'no': 2
+    country: lux
+    fname: Gilles
+    lname: Englebert
+    scores:
+      - 6
+      - 0
+      - 0
+      - 0
+  - 'no': 3
+    country: lux
+    fname: Michel
+    lname: Thull
+    scores:
+      - 3
+      - 1
+      - 0
+      - 2
+  - 'no': 4
+    country: lux
+    fname: Philippe
+    lname: Scholtes
+    scores:
+      - 1
+      - 0
+      - 0
+      - 0
+  - 'no': 5
+    country: lux
+    fname: Carole
+    lname: Muller
+    scores:
+      - 7
+      - 1
+      - 0
+      - 1
+  - 'no': 6
+    country: lux
+    fname: Christina
+    lname: Meyer
+    scores:
+      - 7
+      - 0
+      - 0
+      - 1
+  - 'no': 7
+    country: lux
+    fname: Patrick
+    lname: Meurin
+    scores:
+      - 7
+      - 0
+      - 0
+      - 3
+  - 'no': 8
+    country: lux
+    fname: Linda
+    lname: Dell’Angela
+    scores:
+      - 0
+      - 0
+      - 0
+      - 2
+  - 'no': 9
+    country: lux
+    fname: Charel
+    lname: Thull
+    scores:
+      - 0
+      - 0
+      - 0
+      - 1
+  - 'no': 10
+    country: lux
+    fname: Eric
+    lname: Sinner
+    scores:
+      - 3
+      - 1
+      - 0
+      - 0
+  - 'no': 1
+    country: nld
+    fname: Guus
+    lname: Berkelmans
+    scores:
+      - 7
+      - 6
+      - 1
+      - 3
+  - 'no': 2
+    country: nld
+    fname: Peter
+    lname: Gerlagh
+    scores:
+      - 7
+      - 1
+      - 0
+      - 1
+  - 'no': 3
+    country: nld
+    fname: Ragnar
+    lname: Groot Koerkamp
+    scores:
+      - 7
+      - 7
+      - 4
+      - 3
+  - 'no': 4
+    country: nld
+    fname: Jan-Willem
+    mname: van
+    lname: Ittersum
+    scores:
+      - 7
+      - 1
+      - 0
+      - 2
+  - 'no': 5
+    country: nld
+    fname: Matthijs
+    lname: Lip
+    scores:
+      - 7
+      - 1
+      - 0
+      - 3
+  - 'no': 6
+    country: nld
+    fname: Djurre
+    lname: Tijsma
+    scores:
+      - 7
+      - 1
+      - 0
+      - 1
+  - 'no': 7
+    country: nld
+    fname: Matthijs
+    lname: Vernooij
+    scores:
+      - 6
+      - 1
+      - 0
+      - 2
+  - 'no': 8
+    country: nld
+    fname: Bas
+    lname: Verseveldt
+    scores:
+      - 7
+      - 6
+      - 0
+      - 1
+  - 'no': 9
+    country: nld
+    fname: Jeroen
+    lname: Winkel
+    scores:
+      - 7
+      - 5
+      - 0
+      - 3
+  - 'no': 10
+    country: nld
+    fname: Jetze
+    lname: Zoethout
+    scores:
+      - 7
+      - 7
+      - 7
+      - 3

@@ -1,0 +1,608 @@
+year: 2018
+location: Mersch
+country: lux
+thresholds:
+  bronze: 11
+  silver: 18
+  gold: 24
+honourableMentions: true
+info: |-
+  The tenth Benelux Mathematical Olympiad took place in Luxembourg from 27th to 29th April 2018. The teams arrived on Friday, 27th April and the Olympiad ended in the afternoon of Sunday, 29th April. To celebrate the 10th edition of the BxMO, three extra countries (France, Ireland and Switzerland) were invited. 
+
+   The paper was sat on Saturday morning in the annexe of the Lycée Classique de Diekirch in Mersch, where one of the Ersatz-IMOs took place in 1980. Teams lodged in the youth hostel in Luxembourg-City. 
+
+   The marking of the papers was done by an international team of coordinators. Chief coordinators were Pierre Haas and Charles Leytem.
+problems:
+  - lang: de
+  - lang: en
+  - lang: fr
+  - lang: nl
+  - lang: zz
+delegations:
+  - country: bel
+    leader:
+      fname: Nicolas
+      lname: Radu
+    deputies:
+      - fname: Stijn
+        lname: Cambie
+      - fname: Hoan-Phung
+        lname: Bui
+  - country: fra
+    leader:
+      fname: Thomas
+      lname: Budzinski
+    deputies:
+      - fname: Colin
+        lname: Davalo
+      - fname: Myriam
+        lname: Qrichi Aniba
+  - country: irl
+    leader:
+      fname: Andrew
+      lname: Smith
+    deputies:
+      - fname: Jacob
+        lname: Bennett-Woolf
+  - country: lux
+    leader:
+      fname: Bernard
+      lname: Felten
+    deputies:
+      - fname: Claudine
+        lname: Bausch
+      - fname: Pascal
+        lname: Zeihen
+  - country: nld
+    leader:
+      fname: Julian
+      lname: Lyczak
+    deputies:
+      - fname: Jeroen
+        lname: Huijben
+      - fname: Eva
+        mname: van
+        lname: Ammers
+  - country: sui
+    leader:
+      fname: Alain
+      lname: Rossier
+    deputies:
+      - fname: Horace
+        lname: Chaix
+      - fname: Henning
+        lname: Zhang
+participants:
+  - 'no': 1
+    country: bel
+    fname: Tijs
+    lname: Buggenhout
+    scores:
+      - 7
+      - 5
+      - 7
+      - 6
+  - 'no': 2
+    country: bel
+    fname: Daniel
+    lname: Cortild
+    scores:
+      - 7
+      - 0
+      - 7
+      - 7
+  - 'no': 3
+    country: bel
+    fname: Flor
+    lname: De Bock
+    scores:
+      - 7
+      - 0
+      - 2
+      - 6
+  - 'no': 4
+    country: bel
+    fname: Gert-Jan
+    lname: Devleeschouwer
+    scores:
+      - 0
+      - 0
+      - 7
+      - 1
+  - 'no': 5
+    country: bel
+    fname: Benoît
+    lname: Dubus
+    scores:
+      - 4
+      - 0
+      - 0
+      - 7
+  - 'no': 6
+    country: bel
+    fname: Willem
+    lname: Jaspers
+    scores:
+      - 5
+      - 0
+      - 0
+      - 1
+  - 'no': 7
+    country: bel
+    fname: Jueun
+    lname: Kim
+    scores:
+      - 7
+      - 0
+      - 0
+      - 0
+  - 'no': 8
+    country: bel
+    fname: Marie
+    lname: Peeters
+    scores:
+      - 7
+      - 3
+      - 7
+      - 7
+  - 'no': 9
+    country: bel
+    fname: Bruno
+    lname: Ploumhans
+    scores:
+      - 7
+      - 0
+      - 0
+      - 6
+  - 'no': 10
+    country: bel
+    fname: Lukas
+    lname: Vandeputte
+    scores:
+      - 5
+      - 2
+      - 3
+      - 6
+  - 'no': 1
+    country: fra
+    fname: Emile
+    lname: Averous
+    scores:
+      - 7
+      - 0
+      - 6
+      - 6
+  - 'no': 2
+    country: fra
+    fname: Pierre-Alexandre
+    lname: Bazin
+    scores:
+      - 7
+      - 7
+      - 7
+      - 7
+  - 'no': 3
+    country: fra
+    fname: Matthieu
+    lname: Bouyer
+    scores:
+      - 7
+      - 0
+      - 4
+      - 7
+  - 'no': 4
+    country: fra
+    fname: Paul
+    lname: Cahen
+    scores:
+      - 7
+      - 7
+      - 7
+      - 7
+  - 'no': 5
+    country: fra
+    fname: Pierre-Marie
+    lname: Esmenjaud
+    scores:
+      - 5
+      - 0
+      - 7
+      - 7
+  - 'no': 6
+    country: fra
+    fname: Théodore
+    lname: Fougereux
+    scores:
+      - 7
+      - 0
+      - 4
+      - 7
+  - 'no': 7
+    country: fra
+    fname: Julien
+    lname: Jampsin
+    scores:
+      - 7
+      - 0
+      - 0
+      - 6
+  - 'no': 8
+    country: fra
+    fname: Anna
+    lname: Luchnikova
+    scores:
+      - 0
+      - 0
+      - 4
+      - 7
+  - 'no': 9
+    country: fra
+    fname: Xavier
+    lname: Pigé
+    scores:
+      - 1
+      - 3
+      - 4
+      - 7
+  - 'no': 10
+    country: fra
+    fname: Jean
+    lname: Zablocki
+    scores:
+      - 4
+      - 0
+      - 7
+      - 3
+  - 'no': 1
+    country: irl
+    fname: Anna
+    lname: Mustata
+    scores:
+      - 0
+      - 0
+      - 6
+      - 7
+  - 'no': 2
+    country: irl
+    fname: Kim
+    lname: Wansoo
+    scores:
+      - 5
+      - 0
+      - 0
+      - 0
+  - 'no': 3
+    country: irl
+    fname: Lucas
+    lname: Bachmann
+    scores:
+      - 6
+      - 5
+      - 0
+      - 7
+  - 'no': 4
+    country: irl
+    fname: Tony
+    lname: O’Halloran
+    scores:
+      - 0
+      - 0
+      - 0
+      - 1
+  - 'no': 5
+    country: irl
+    fname: Basem
+    lname: Fouda
+    scores:
+      - 0
+      - 0
+      - 0
+      - 1
+  - 'no': 6
+    country: irl
+    fname: Vlad
+    lname: Lica
+    scores:
+      - 0
+      - 0
+      - 0
+      - 6
+  - 'no': 7
+    country: irl
+    fname: Nicholas
+    lname: Pochinkov
+    scores:
+      - 0
+      - 2
+      - 0
+      - 7
+  - 'no': 8
+    country: irl
+    fname: Dylan
+    lname: Cuskelly
+    scores:
+      - 1
+      - 0
+      - 0
+      - 1
+  - 'no': 9
+    country: irl
+    fname: Michal
+    lname: Szarkowicz
+    scores:
+      - 1
+      - 0
+      - 0
+      - 0
+  - 'no': 1
+    country: lux
+    fname: Nathaël
+    lname: Da Costa
+    scores:
+      - 0
+      - 0
+      - 0
+      - 4
+  - 'no': 2
+    country: lux
+    fname: Pol
+    lname: Thill
+    scores:
+      - 0
+      - 0
+      - 0
+      - 0
+  - 'no': 3
+    country: lux
+    fname: Vincent
+    lname: Toor
+    scores:
+      - 5
+      - 0
+      - 0
+      - 1
+  - 'no': 4
+    country: lux
+    fname: Lea
+    lname: Menasce
+    scores:
+      - 0
+      - 0
+      - 7
+      - 1
+  - 'no': 5
+    country: lux
+    fname: Mathis
+    lname: Foxius
+    scores:
+      - 0
+      - 1
+      - 1
+      - 0
+  - 'no': 6
+    country: lux
+    fname: Philippe
+    lname: Harpes
+    scores:
+      - 0
+      - 0
+      - 2
+      - 0
+  - 'no': 7
+    country: lux
+    fname: Rafael
+    lname: Menasce
+    scores:
+      - 1
+      - 0
+      - 0
+      - 1
+  - 'no': 8
+    country: lux
+    fname: Noah
+    lname: Oberweis
+    scores:
+      - 2
+      - 0
+      - 0
+      - 0
+  - 'no': 9
+    country: lux
+    fname: Oscar
+    lname: Van Bommel
+    scores:
+      - 1
+      - 0
+      - 0
+      - 1
+  - 'no': 10
+    country: lux
+    fname: Lori
+    lname: Reding
+    scores:
+      - 0
+      - 0
+      - 0
+      - 0
+  - 'no': 1
+    country: nld
+    fname: Nils
+    mname: van de
+    lname: Berg
+    scores:
+      - 7
+      - 3
+      - 7
+      - 7
+  - 'no': 2
+    country: nld
+    fname: Szabi
+    lname: Buzogany
+    scores:
+      - 7
+      - 3
+      - 7
+      - 5
+  - 'no': 3
+    country: nld
+    fname: Thomas
+    lname: Chen
+    scores:
+      - 7
+      - 6
+      - 0
+      - 7
+  - 'no': 4
+    country: nld
+    fname: Philippe
+    mname: van
+    lname: Elderen
+    scores:
+      - 2
+      - 0
+      - 0
+      - 0
+  - 'no': 5
+    country: nld
+    fname: Jovan
+    lname: Gerbscheid
+    scores:
+      - 7
+      - 1
+      - 7
+      - 7
+  - 'no': 6
+    country: nld
+    fname: Hanne
+    lname: Snijders
+    scores:
+      - 0
+      - 0
+      - 1
+      - 4
+  - 'no': 7
+    country: nld
+    fname: Floris
+    lname: Venselaar
+    scores:
+      - 1
+      - 1
+      - 3
+      - 7
+  - 'no': 8
+    country: nld
+    fname: Tim
+    lname: Vogels
+    scores:
+      - 2
+      - 3
+      - 5
+      - 7
+  - 'no': 9
+    country: nld
+    fname: Lammert
+    lname: Westerdijk
+    scores:
+      - 7
+      - 0
+      - 7
+      - 7
+  - 'no': 10
+    country: nld
+    fname: Richard
+    lname: Wols
+    scores:
+      - 4
+      - 0
+      - 4
+      - 7
+  - 'no': 1
+    country: sui
+    fname: Valentin
+    lname: Imbach
+    scores:
+      - 7
+      - 3
+      - 2
+      - 7
+  - 'no': 2
+    country: sui
+    fname: Marco
+    lname: Cavaleri
+    scores:
+      - 7
+      - 0
+      - 7
+      - 7
+  - 'no': 3
+    country: sui
+    fname: Raphael
+    lname: Angst
+    scores:
+      - 7
+      - 1
+      - 2
+      - 5
+  - 'no': 4
+    country: sui
+    fname: Tanish
+    lname: Patil
+    scores:
+      - 7
+      - 1
+      - 4
+      - 7
+  - 'no': 5
+    country: sui
+    fname: Juraj
+    lname: Rosinsky
+    scores:
+      - 5
+      - 0
+      - 7
+      - 7
+  - 'no': 6
+    country: sui
+    fname: Timothy
+    lname: Tempus
+    scores:
+      - 7
+      - 4
+      - 0
+      - 7
+  - 'no': 7
+    country: sui
+    fname: Bibin
+    lname: Muttappillil
+    scores:
+      - 6
+      - 0
+      - 0
+      - 7
+  - 'no': 8
+    country: sui
+    fname: Florian
+    lname: Keta
+    scores:
+      - 0
+      - 0
+      - 0
+      - 4
+  - 'no': 9
+    country: sui
+    fname: Daniel
+    lname: Pfister
+    scores:
+      - 3
+      - 0
+      - 0
+      - 1
+  - 'no': 10
+    country: sui
+    fname: David Leonardo
+    lname: Lazar
+    scores:
+      - 7
+      - 1
+      - 7
+      - 1

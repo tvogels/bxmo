@@ -1,0 +1,429 @@
+year: 2015
+location: Mersch
+country: lux
+thresholds:
+  bronze: 10
+  silver: 15
+  gold: 21
+honourableMentions: true
+info: |-
+  The seventh Benelux Mathematical Olympiad took place in Luxembourg from 8th to 10th May 2015. The teams arrived in the afternoon of Friday, 8th May and the Olympiad ended in the afternoon of Sunday, 10th May. For this edition France was invited as a guest country.
+
+  The paper was sat on Saturday morning in the annexe of the Lycée Classique de Diekirch in Mersch, where one of the Ersatz-IMOs took place in 1980. Teams lodged in the youth hostel in Eisenborn.
+
+  For the medal cut-offs only the scores of the 30 official Benelux contestants were taken into account.
+problems:
+  - lang: en
+  - lang: fr
+  - lang: nl
+  - lang: zz
+delegations:
+  - country: bel
+    leader:
+      fname: Stijn
+      lname: Symens
+    deputies:
+      - fname: Pierre-Alain
+        lname: Jacqmin
+      - fname: Christophe
+        lname: Debry
+  - country: fra
+    leader:
+      fname: Pierre
+      lname: Bornsztein
+    deputies:
+      - fname: Thomas
+        lname: Budzinski
+      - fname: Guillaume
+        lname: Conchon-Kerjan
+  - country: lux
+    leader:
+      fname: Bernard
+      lname: Felten
+    deputies:
+      - fname: Carine
+        lname: Bartholmé
+      - fname: André
+        lname: Weis
+  - country: nld
+    leader:
+      fname: Quintijn
+      lname: Puite
+    deputies:
+      - fname: Daniël
+        lname: Kroes
+      - fname: Julian
+        lname: Lyczak
+participants:
+  - 'no': 1
+    country: bel
+    fname: Wouter
+    lname: Andriessen
+    scores:
+      - 7
+      - 0
+      - 0
+      - 1
+  - 'no': 2
+    country: bel
+    fname: Corentin
+    lname: Bodart
+    scores:
+      - 7
+      - 0
+      - 4
+      - 3
+  - 'no': 3
+    country: bel
+    fname: Pablo
+    lname: Bustillo Vazquez
+    scores:
+      - 7
+      - 7
+      - 7
+      - 7
+  - 'no': 4
+    country: bel
+    fname: Savinien
+    lname: Kreczman
+    scores:
+      - 7
+      - 1
+      - 4
+      - 3
+  - 'no': 5
+    country: bel
+    fname: Tessa
+    lname: Leliveld
+    scores:
+      - 2
+      - 2
+      - 0
+      - 1
+  - 'no': 6
+    country: bel
+    fname: Anton
+    lname: Miserez
+    scores:
+      - 0
+      - 0
+      - 0
+      - 2
+  - 'no': 7
+    country: bel
+    fname: Ovidiu-Alexandru
+    lname: Parfene
+    scores:
+      - 1
+      - 0
+      - 4
+      - 1
+  - 'no': 8
+    country: bel
+    fname: Simon
+    lname: Roelandt
+    scores:
+      - 7
+      - 0
+      - 4
+      - 1
+  - 'no': 9
+    country: bel
+    fname: Corentin
+    lname: Simon
+    scores:
+      - 1
+      - 0
+      - 7
+      - 0
+  - 'no': 10
+    country: bel
+    fname: Art
+    lname: Waeterschoot
+    scores:
+      - 7
+      - 7
+      - 4
+      - 3
+  - 'no': 1
+    country: fra
+    fname: Baptiste
+    lname: Collet
+    scores:
+      - 7
+      - 0
+      - 7
+      - 1
+  - 'no': 2
+    country: fra
+    fname: Colin
+    lname: Davalo
+    scores:
+      - 7
+      - 7
+      - 7
+      - 7
+  - 'no': 3
+    country: fra
+    fname: Hugues
+    lname: Déprés
+    scores:
+      - 7
+      - 0
+      - 4
+      - 1
+  - 'no': 4
+    country: fra
+    fname: Clara
+    lname: Ding
+    scores:
+      - 1
+      - 0
+      - 4
+      - 0
+  - 'no': 5
+    country: fra
+    fname: Henri
+    lname: Godefroy
+    scores:
+      - 7
+      - 0
+      - 5
+      - 7
+  - 'no': 6
+    country: fra
+    fname: Yassine
+    lname: Hamdi
+    scores:
+      - 7
+      - 7
+      - 7
+      - 1
+  - 'no': 7
+    country: fra
+    fname: Léo
+    lname: Heidelberger
+    scores:
+      - 1
+      - 2
+      - 1
+      - 3
+  - 'no': 8
+    country: fra
+    fname: Clément
+    lname: Lezane
+    scores:
+      - 7
+      - 7
+      - 6
+      - 1
+  - 'no': 9
+    country: fra
+    fname: Wassim
+    lname: Trabelsi
+    scores:
+      - 1
+      - 7
+      - 4
+      - 3
+  - 'no': 10
+    country: fra
+    fname: Lucie
+    lname: Wang
+    scores:
+      - 7
+      - 7
+      - 7
+      - 1
+  - 'no': 1
+    country: lux
+    fname: Gilles
+    lname: Englebert
+    scores:
+      - 7
+      - 7
+      - 4
+      - 0
+  - 'no': 2
+    country: lux
+    fname: Tara
+    lname: Trauthwein
+    scores:
+      - 7
+      - 0
+      - 1
+      - 0
+  - 'no': 3
+    country: lux
+    fname: Pierre
+    lname: Foxius
+    scores:
+      - 0
+      - 0
+      - 1
+      - 1
+  - 'no': 4
+    country: lux
+    fname: Tom
+    lname: Schmit
+    scores:
+      - 1
+      - 0
+      - 0
+      - 1
+  - 'no': 5
+    country: lux
+    fname: Pit
+    lname: Bermes
+    scores:
+      - 1
+      - 0
+      - 0
+      - 1
+  - 'no': 6
+    country: lux
+    fname: Alain
+    lname: Bertemes
+    scores:
+      - 4
+      - 0
+      - 0
+      - 0
+  - 'no': 7
+    country: lux
+    fname: Tim
+    lname: Bremer
+    scores:
+      - 1
+      - 0
+      - 4
+      - 1
+  - 'no': 8
+    country: lux
+    fname: Pit
+    lname: Groben
+    scores:
+      - 1
+      - 0
+      - 0
+      - 0
+  - 'no': 9
+    country: lux
+    fname: Oliver
+    lname: Nick
+    scores:
+      - 1
+      - 2
+      - 4
+      - 1
+  - 'no': 10
+    country: lux
+    fname: Max
+    lname: Zuidberg
+    scores:
+      - 0
+      - 0
+      - 1
+      - 0
+  - 'no': 11
+    country: lux
+    fname: Lukas
+    lname: Pierce
+    scores:
+      - 0
+      - 0
+      - 0
+      - 0
+  - 'no': 1
+    country: nld
+    fname: Dirk
+    mname: van
+    lname: Bree
+    scores:
+      - 4
+      - 2
+      - 1
+      - 6
+  - 'no': 2
+    country: nld
+    fname: Tim
+    lname: Brouwer
+    scores:
+      - 6
+      - 0
+      - 4
+      - 2
+  - 'no': 3
+    country: nld
+    fname: Yuhui
+    lname: Cheng
+    scores:
+      - 7
+      - 1
+      - 0
+      - 2
+  - 'no': 4
+    country: nld
+    fname: Mike
+    lname: Daas
+    scores:
+      - 2
+      - 7
+      - 2
+      - 1
+  - 'no': 5
+    country: nld
+    fname: Hugo
+    lname: Melchers
+    scores:
+      - 1
+      - 0
+      - 1
+      - 1
+  - 'no': 6
+    country: nld
+    fname: Levi
+    mname: van de
+    lname: Pol
+    scores:
+      - 7
+      - 7
+      - 4
+      - 1
+  - 'no': 7
+    country: nld
+    fname: Jasper
+    lname: Stammes
+    scores:
+      - 1
+      - 2
+      - 1
+      - 0
+  - 'no': 8
+    country: nld
+    fname: Michiel
+    lname: Versnel
+    scores:
+      - 0
+      - 0
+      - 4
+      - 1
+  - 'no': 9
+    country: nld
+    fname: Jorke
+    mname: de
+    lname: Vlas
+    scores:
+      - 1
+      - 7
+      - 7
+      - 2
+  - 'no': 10
+    country: nld
+    fname: Bob
+    lname: Zwetsloot
+    scores:
+      - 7
+      - 3
+      - 4
+      - 1

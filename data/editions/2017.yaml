@@ -1,0 +1,320 @@
+year: 2017
+location: Namur
+country: bel
+thresholds:
+  bronze: 12
+  silver: 17
+  gold: 22
+honourableMentions: true
+info: |-
+  The 2017 edition of the BxMO took place in Belgium, at the cultural center Marcel Hicter "La Marlagne" in Wépion-Namur, from 5 to 7 May.
+
+  [Website](http://omb.sbpm.be/bxmo2017/)
+problems:
+  - lang: en
+  - lang: fr
+  - lang: nl
+  - lang: zz
+delegations:
+  - country: bel
+    leader:
+      fname: Nicolas
+      lname: Radu
+    deputies:
+      - fname: Stijn
+        lname: Cambie
+      - fname: Tim
+        lname: Seynnaeve
+  - country: lux
+    leader:
+      fname: Charles
+      lname: Leytem
+    deputies:
+      - fname: Pascal
+        lname: Zeihen
+      - fname: Bernard
+        lname: Felten
+  - country: nld
+    leader:
+      fname: Julian
+      lname: Lyczak
+    deputies:
+      - fname: Jeroen
+        lname: Huijben
+      - fname: Jeroen
+        lname: Winkel
+participants:
+  - 'no': 1
+    country: bel
+    fname: Tijs
+    lname: Buggenhout
+    scores:
+      - 1
+      - 1
+      - 3
+      - 2
+  - 'no': 2
+    country: bel
+    fname: Daniel
+    lname: Cortlild
+    scores:
+      - 3
+      - 2
+      - 7
+      - 1
+  - 'no': 3
+    country: bel
+    fname: Rodrigue
+    lname: Haya Enriquez
+    scores:
+      - 0
+      - 5
+      - 7
+      - 3
+  - 'no': 4
+    country: bel
+    fname: Sam
+    lname: Heyrman
+    scores:
+      - 0
+      - 4
+      - 7
+      - 0
+  - 'no': 5
+    country: bel
+    fname: Savinien
+    lname: Kreczman
+    scores:
+      - 7
+      - 7
+      - 7
+      - 7
+  - 'no': 6
+    country: bel
+    fname: Simon
+    lname: Lemal
+    scores:
+      - 1
+      - 4
+      - 1
+      - 0
+  - 'no': 7
+    country: bel
+    fname: Marie
+    lname: Peeters
+    scores:
+      - 2
+      - 6
+      - 7
+      - 2
+  - 'no': 8
+    country: bel
+    fname: Robbe
+    lname: Pincket
+    scores:
+      - 4
+      - 7
+      - 0
+      - 0
+  - 'no': 9
+    country: bel
+    fname: Indy
+    lname: Van Den Broeck
+    scores:
+      - 2
+      - 5
+      - 6
+      - 1
+  - 'no': 10
+    country: bel
+    fname: Lukas
+    lname: Vandeputte
+    scores:
+      - 1
+      - 3
+      - 0
+      - 1
+  - 'no': 1
+    country: lux
+    fname: Martin
+    lname: Rakovsky
+    scores:
+      - 7
+      - 3
+      - 7
+      - 2
+  - 'no': 2
+    country: lux
+    fname: Tom
+    lname: Schmit
+    scores:
+      - 1
+      - 1
+      - 0
+      - 1
+  - 'no': 3
+    country: lux
+    fname: Pit
+    lname: Bermes
+    scores:
+      - 1
+      - 5
+      - 2
+      - 1
+  - 'no': 4
+    country: lux
+    fname: Lea
+    lname: Menasce
+    scores:
+      - 0
+      - 0
+      - 7
+      - 0
+  - 'no': 5
+    country: lux
+    fname: Oliver
+    lname: Nick
+    scores:
+      - 0
+      - 0
+      - 1
+      - 1
+  - 'no': 6
+    country: lux
+    fname: Pol
+    lname: Thill
+    scores:
+      - 0
+      - 0
+      - 2
+      - 0
+  - 'no': 7
+    country: lux
+    fname: Felix
+    lname: Thill
+    scores:
+      - 0
+      - 0
+      - 0
+      - 0
+  - 'no': 8
+    country: lux
+    fname: Pierre
+    lname: Foxius
+    scores:
+      - 0
+      - 7
+      - 0
+      - 0
+  - 'no': 9
+    country: lux
+    fname: Mathis
+    lname: Foxius
+    scores:
+      - 0
+      - 6
+      - 0
+      - 0
+  - 'no': 10
+    country: lux
+    fname: Tim
+    lname: Conzemius
+    scores:
+      - 0
+      - 0
+      - 0
+      - 1
+  - 'no': 1
+    country: nld
+    fname: Nils
+    mname: van de
+    lname: Berg
+    scores:
+      - 0
+      - 6
+      - 7
+      - 2
+  - 'no': 2
+    country: nld
+    fname: Erik
+    mname: van
+    lname: Cappellen
+    scores:
+      - 7
+      - 4
+      - 6
+      - 2
+  - 'no': 3
+    country: nld
+    fname: Thomas
+    lname: Chen
+    scores:
+      - 7
+      - 7
+      - 7
+      - 1
+  - 'no': 4
+    country: nld
+    fname: Ludo
+    lname: Dekker
+    scores:
+      - 3
+      - 6
+      - 7
+      - 3
+  - 'no': 5
+    country: nld
+    fname: Wietze
+    lname: Koops
+    scores:
+      - 7
+      - 7
+      - 7
+      - 1
+  - 'no': 6
+    country: nld
+    fname: Matthijs
+    mname: van der
+    lname: Poel
+    scores:
+      - 0
+      - 7
+      - 7
+      - 2
+  - 'no': 7
+    country: nld
+    fname: Ward
+    mname: van der
+    lname: Schoot
+    scores:
+      - 7
+      - 0
+      - 7
+      - 2
+  - 'no': 8
+    country: nld
+    fname: Maarten
+    lname: Stremler
+    scores:
+      - 7
+      - 4
+      - 0
+      - 1
+  - 'no': 9
+    country: nld
+    fname: Siebe
+    lname: Verheijen
+    scores:
+      - 6
+      - 4
+      - 7
+      - 1
+  - 'no': 10
+    country: nld
+    fname: Lammert
+    lname: Westerdijk
+    scores:
+      - 0
+      - 1
+      - 1
+      - 4

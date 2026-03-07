@@ -1,0 +1,324 @@
+year: 2024
+location: Valkenswaard
+country: nld
+thresholds:
+  bronze: 9
+  silver: 12
+  gold: 18
+honourableMentions: true
+info: |-
+  The 2024 edition of the BxMO took place in Valkenswaard from 26 to 28 April.
+
+  Organising committee: Bob Zwetsloot (chair), Mieke Wessel, Thomas Chen, Lance Bakker 
+
+  [Website](http://www.bxmo.nl)
+problems:
+  - lang: en
+  - lang: fr
+  - lang: nl
+  - lang: zz
+delegations:
+  - country: bel
+    leader:
+      fname: Nicolas
+      lname: Radu
+    deputies:
+      - fname: Tijs
+        lname: Buggenhout
+      - fname: Justin
+        lname: Vast
+  - country: lux
+    leader:
+      fname: Bernard
+      lname: Felten
+    deputies:
+      - fname: Robert
+        lname: Freud
+      - fname: Pascal
+        lname: Zeihen
+  - country: nld
+    leader:
+      fname: Nils
+      mname: Van de
+      lname: Berg
+    deputies:
+      - fname: Wietze
+        lname: Koops
+      - fname: Lars
+        lname: Pos
+      - fname: Quintijn
+        lname: Puite
+participants:
+  - 'no': 1
+    country: bel
+    fname: Anastasios
+    lname: Amvrosiadis
+    scores:
+      - 2
+      - 0
+      - 7
+      - 0
+  - 'no': 2
+    country: bel
+    fname: Robin
+    lname: Antoine
+    scores:
+      - 7
+      - 7
+      - 3
+      - 1
+  - 'no': 3
+    country: bel
+    fname: Thomas
+    lname: Audenaert
+    scores:
+      - 7
+      - 0
+      - 0
+      - 1
+  - 'no': 4
+    country: bel
+    fname: Jonas
+    lname: Boeykens
+    scores:
+      - 7
+      - 0
+      - 0
+      - 6
+  - 'no': 5
+    country: bel
+    fname: Joseph
+    lname: Deraemaeker
+    scores:
+      - 7
+      - 0
+      - 0
+      - 3
+  - 'no': 6
+    country: bel
+    fname: Pierre-Akin
+    lname: Dürrüoglu
+    scores:
+      - 7
+      - 7
+      - 7
+      - 1
+  - 'no': 7
+    country: bel
+    fname: Enya
+    lname: Leroy
+    scores:
+      - 4
+      - 0
+      - 3
+      - 0
+  - 'no': 8
+    country: bel
+    fname: Samuel
+    lname: Nuyts
+    scores:
+      - 7
+      - 0
+      - 3
+      - 1
+  - 'no': 9
+    country: bel
+    fname: Victor
+    lname: Obi
+    scores:
+      - 6
+      - 1
+      - 0
+      - 2
+  - 'no': 10
+    country: bel
+    fname: Victor
+    lname: Telea
+    scores:
+      - 7
+      - 0
+      - 0
+      - 1
+  - 'no': 1
+    country: lux
+    fname: Louise
+    lname: Bernier
+    scores:
+      - 7
+      - 0
+      - 0
+      - 1
+  - 'no': 2
+    country: lux
+    fname: Konstantinos
+    lname: Katsikas
+    scores:
+      - 2
+      - 0
+      - 0
+      - 1
+  - 'no': 3
+    country: lux
+    fname: Khalid
+    lname: Khan
+    scores:
+      - 1
+      - 0
+      - 0
+      - 0
+  - 'no': 4
+    country: lux
+    fname: Kiah
+    lname: Shah
+    scores:
+      - 7
+      - 0
+      - 0
+      - 1
+  - 'no': 5
+    country: lux
+    fname: Vida
+    lname: Suselj
+    scores:
+      - 6
+      - 0
+      - 0
+      - 1
+  - 'no': 6
+    country: lux
+    fname: Maia
+    lname: Tanasa
+    scores:
+      - 4
+      - 0
+      - 0
+      - 1
+  - 'no': 7
+    country: lux
+    fname: Michele
+    lname: Voncken
+    scores:
+      - 4
+      - 0
+      - 0
+      - 0
+  - 'no': 8
+    country: lux
+    fname: Jos
+    lname: Winkin
+    scores:
+      - 5
+      - 2
+      - 0
+      - 0
+  - 'no': 9
+    country: lux
+    fname: Kinji
+    lname: Yoshida
+    scores:
+      - 2
+      - 0
+      - 0
+      - 1
+  - 'no': 10
+    country: lux
+    fname: Duo
+    lname: Zhang
+    scores:
+      - 1
+      - 0
+      - 0
+      - 0
+  - 'no': 1
+    country: nld
+    fname: Felix
+    lname: Hamoen
+    scores:
+      - 7
+      - 0
+      - 0
+      - 7
+  - 'no': 2
+    country: nld
+    fname: Josiah
+    mname: t
+    lname: Hart
+    scores:
+      - 7
+      - 0
+      - 0
+      - 2
+  - 'no': 3
+    country: nld
+    fname: Casper
+    lname: Heimel
+    scores:
+      - 7
+      - 1
+      - 0
+      - 1
+  - 'no': 4
+    country: nld
+    fname: Tobias
+    lname: Kristiansen
+    scores:
+      - 7
+      - 0
+      - 5
+      - 7
+  - 'no': 5
+    country: nld
+    fname: Tijmen
+    mname: de
+    lname: Lange
+    scores:
+      - 7
+      - 7
+      - 0
+      - 1
+  - 'no': 6
+    country: nld
+    fname: Fenne
+    lname: Meijer
+    scores:
+      - 7
+      - 4
+      - 0
+      - 1
+  - 'no': 7
+    country: nld
+    fname: Yorick
+    lname: Nap
+    scores:
+      - 7
+      - 0
+      - 0
+      - 1
+  - 'no': 8
+    country: nld
+    fname: Tobias
+    lname: Piet
+    scores:
+      - 5
+      - 0
+      - 0
+      - 1
+  - 'no': 9
+    country: nld
+    fname: Lucas
+    mname: van de
+    lname: Sande
+    scores:
+      - 6
+      - 0
+      - 0
+      - 1
+  - 'no': 10
+    country: nld
+    fname: Ryan
+    lname: Staal
+    scores:
+      - 7
+      - 0
+      - 4
+      - 1
