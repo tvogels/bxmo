@@ -32,7 +32,12 @@ const html = renderMarkdown(aboutContent);
 <Layout
   title="About — BxMO"
   description="About the Benelux Mathematical Olympiad"
+  hero={true}
 >
+  <Fragment slot="hero">
+    <h1>About BxMO</h1>
+    <p>The Benelux Mathematical Olympiad</p>
+  </Fragment>
   <article class="about-content" set:html={html} />
 </Layout>
 

@@ -85,6 +85,15 @@ const navItems = [
       </div>
     </footer>
 
+    <script is:inline>
+      document.querySelectorAll('.table-wrap').forEach((el) => {
+        el.addEventListener('scroll', () => {
+          const atEnd = el.scrollLeft + el.clientWidth >= el.scrollWidth - 2;
+          el.classList.toggle('scrolled-end', atEnd);
+        });
+      });
+    </script>
+
     <style is:global>
       *,
       *::before,
@@ -264,7 +273,7 @@ const navItems = [
       /* Main */
       main {
         flex: 1;
-        padding-top: 2.5rem;
+        padding-top: 3rem;
         padding-bottom: 3rem;
       }
       main.has-hero {
@@ -293,6 +302,35 @@ const navItems = [
         box-shadow: var(--shadow-sm);
       }
 
+      /* Table wrapper — scrollable container with scroll hint */
+      .table-wrap {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        border-radius: var(--radius);
+        border: 1px solid var(--color-border);
+        background: var(--color-surface);
+        margin-bottom: 2rem;
+      }
+      .table-wrap table {
+        margin: 0;
+      }
+      .table-wrap th:first-child,
+      .table-wrap td:first-child {
+        padding-left: 1rem;
+      }
+      .table-wrap th:last-child,
+      .table-wrap td:last-child {
+        padding-right: 1rem;
+      }
+      @media (max-width: 768px) {
+        .table-wrap {
+          box-shadow: inset -24px 0 20px -12px rgba(0, 0, 0, 0.15);
+        }
+        .table-wrap.scrolled-end {
+          box-shadow: none;
+        }
+      }
+
       /* Table */
       table {
         width: 100%;
@@ -312,8 +350,6 @@ const navItems = [
         text-transform: uppercase;
         letter-spacing: 0.05em;
         color: var(--color-text-muted);
-        position: sticky;
-        top: 56px;
       }
       td.num {
         text-align: right;
