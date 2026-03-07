@@ -1,0 +1,50 @@
+---
+import Layout from '../components/Layout.astro';
+import { loadAbout } from '../lib/data';
+
+const aboutContent = loadAbout();
+
+// Simple Markdown-to-HTML for headings, paragraphs, links
+function renderMarkdown(md: string): string {
+  return md
+    .split('\n\n')
+    .map((block) => {
+      const trimmed = block.trim();
+      if (!trimmed) return '';
+      if (trimmed.startsWith('## ')) {
+        return `<h2>${trimmed.slice(3)}</h2>`;
+      }
+      if (trimmed.startsWith('# ')) {
+        return `<h1>${trimmed.slice(2)}</h1>`;
+      }
+      const withLinks = trimmed.replace(
+        /\[([^\]]+)\]\(([^)]+)\)/g,
+        '<a href="$2">$1</a>',
+      );
+      return `<p>${withLinks}</p>`;
+    })
+    .join('\n');
+}
+
+const html = renderMarkdown(aboutContent);
+---
+
+<Layout
+  title="About — BxMO"
+  description="About the Benelux Mathematical Olympiad"
+>
+  <article class="about-content" set:html={html} />
+</Layout>
+
+<style>
+  .about-content {
+    max-width: 720px;
+  }
+  .about-content :global(h2) {
+    margin-top: 2rem;
+  }
+  .about-content :global(p) {
+    margin-bottom: 1em;
+    line-height: 1.7;
+  }
+</style>

@@ -1,15 +1,79 @@
 ---
+import Layout from '../components/Layout.astro';
+import { getEditionYears, loadEdition, countryName } from '../lib/data';
 
+const years = getEditionYears().reverse();
+const editions = years.map((y) => {
+  const ed = loadEdition(y)!;
+  return {
+    year: ed.year,
+    location: ed.location,
+    country: ed.country,
+    countryName: countryName(ed.country),
+    participantCount: ed.participants.length,
+    countryCount: ed.delegations.length,
+  };
+});
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>BxMO</title>
-  </head>
-  <body>
-    <h1>Benelux Mathematical Olympiad</h1>
-    <p>Site under construction.</p>
-  </body>
-</html>
+<Layout title="BxMO — Benelux Mathematical Olympiad">
+  <h1>Benelux Mathematical Olympiad</h1>
+  <p class="subtitle">
+    Results and statistics from every BxMO edition since 2009.
+  </p>
+
+  <div class="editions-grid">
+    {
+      editions.map((ed) => (
+        <a href={`/results/${ed.year}`} class="edition-card card">
+          <span class="edition-year">{ed.year}</span>
+          <span class="edition-location">
+            {ed.location}, {ed.countryName}
+          </span>
+          <span class="edition-meta">
+            {ed.participantCount} participants · {ed.countryCount} countries
+          </span>
+        </a>
+      ))
+    }
+  </div>
+</Layout>
+
+<style>
+  .subtitle {
+    color: var(--color-text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  .editions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1rem;
+  }
+  .edition-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    transition:
+      transform 0.15s,
+      box-shadow 0.15s;
+    color: var(--color-text);
+  }
+  .edition-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  .edition-year {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+  }
+  .edition-location {
+    font-size: 0.95rem;
+  }
+  .edition-meta {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+  }
+</style>

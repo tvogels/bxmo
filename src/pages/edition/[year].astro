@@ -1,0 +1,125 @@
+---
+import type { GetStaticPaths } from 'astro';
+import Layout from '../../components/Layout.astro';
+import {
+  getEditionYears,
+  loadEdition,
+  countryName,
+  languageName,
+  formatPersonName,
+  loadCountries,
+  loadLanguages,
+} from '../../lib/data';
+
+export const getStaticPaths: GetStaticPaths = () => {
+  return getEditionYears().map((year) => ({ params: { year: String(year) } }));
+};
+
+const { year } = Astro.params;
+const yearNum = Number(year);
+const edition = loadEdition(yearNum)!;
+const countries = loadCountries();
+const languages = loadLanguages();
+---
+
+<Layout
+  title={`BxMO ${year} — ${edition.location}`}
+  description={`Details for the ${year} Benelux Mathematical Olympiad in ${edition.location}`}
+>
+  <h1>BxMO {year} — {edition.location}</h1>
+  <p class="subtitle">
+    Hosted by {countryName(edition.country, countries)}
+  </p>
+
+  <!-- Edition info -->
+  <div class="card info-card">
+    <Fragment set:html={edition.info.replace(/\n/g, '<br>')} />
+  </div>
+
+  <!-- Problem papers -->
+  <h2>Problem Papers</h2>
+  <div class="pdf-grid">
+    {
+      edition.problems.map((p) => (
+        <a
+          href={`/problems/bxmo-problems-${year}-${p.lang}.pdf`}
+          class="pdf-link card"
+        >
+          📄 {languageName(p.lang, languages)}
+        </a>
+      ))
+    }
+  </div>
+
+  <!-- Delegations -->
+  <h2>Delegations</h2>
+  <div class="delegations-grid">
+    {
+      edition.delegations.map((d) => (
+        <div class="delegation-card card">
+          <h3>{countryName(d.country, countries)}</h3>
+          {d.leader && (
+            <p>
+              <strong>Leader:</strong> {formatPersonName(d.leader)}
+            </p>
+          )}
+          {d.deputies && d.deputies.length > 0 && (
+            <p>
+              <strong>
+                {d.deputies.length === 1 ? 'Deputy Leader:' : 'Deputy Leaders:'}
+              </strong>{' '}
+              {d.deputies.map((dep) => formatPersonName(dep)).join(', ')}
+            </p>
+          )}
+        </div>
+      ))
+    }
+  </div>
+
+  <p style="margin-top: 2rem;">
+    <a href={`/results/${year}`}>← View results for BxMO {year}</a>
+  </p>
+</Layout>
+
+<style>
+  .subtitle {
+    color: var(--color-text-muted);
+    margin-bottom: 1.5rem;
+  }
+  .info-card {
+    margin-bottom: 2rem;
+    line-height: 1.7;
+  }
+  .pdf-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+  }
+  .pdf-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.5rem 1rem;
+    color: var(--color-text);
+    font-size: 0.9rem;
+    transition: background 0.15s;
+  }
+  .pdf-link:hover {
+    background: var(--color-primary-light);
+    text-decoration: none;
+  }
+  .delegations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+  .delegation-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  .delegation-card p {
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+  }
+</style>

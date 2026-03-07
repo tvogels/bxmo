@@ -1,0 +1,157 @@
+---
+import Layout from '../components/Layout.astro';
+import {
+  getEditionYears,
+  loadEdition,
+  participantName,
+  countryName,
+  loadCountries,
+} from '../lib/data';
+import { computeAwards } from '../lib/awards';
+import { rankParticipants } from '../lib/stats';
+
+const countries = loadCountries();
+const years = getEditionYears();
+
+// Build a flat index of all participants across all years
+const allParticipants = years.flatMap((year) => {
+  const ed = loadEdition(year)!;
+  const withAwards = computeAwards(
+    ed.participants,
+    ed.thresholds,
+    ed.honourableMentions,
+  );
+  const ranked = rankParticipants(withAwards);
+  return ranked.map((p) => ({
+    name: participantName(p),
+    country: countryName(p.country, countries),
+    countryCode: p.country,
+    year,
+    rank: p.rank,
+    total: p.totalScore,
+    award: p.award,
+    scores: p.scores,
+  }));
+});
+
+const searchData = JSON.stringify(allParticipants);
+---
+
+<Layout
+  title="Search — BxMO"
+  description="Search all BxMO participants across all editions"
+>
+  <h1>Search Participants</h1>
+  <p class="subtitle">
+    Search across {allParticipants.length} participants from {years.length} editions.
+  </p>
+
+  <input
+    type="text"
+    id="search-input"
+    placeholder="Search by name, country, or year…"
+    class="search-box"
+    autofocus
+  />
+
+  <div id="results-count" class="results-count"></div>
+
+  <div class="table-wrap">
+    <table id="search-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Country</th>
+          <th class="num">Year</th>
+          <th class="num">Rank</th>
+          <th class="num">Total</th>
+          <th>Award</th>
+        </tr>
+      </thead>
+      <tbody id="search-body"> </tbody>
+    </table>
+  </div>
+</Layout>
+
+<script is:inline define:vars={{ searchData }}>
+  const data = JSON.parse(searchData);
+  const input = document.getElementById('search-input');
+  const tbody = document.getElementById('search-body');
+  const countEl = document.getElementById('results-count');
+
+  const awardHtml = {
+    gold: '<span class="medal medal-gold">Gold</span>',
+    silver: '<span class="medal medal-silver">Silver</span>',
+    bronze: '<span class="medal medal-bronze">Bronze</span>',
+    hm: '<span class="medal medal-hm">HM</span>',
+  };
+
+  function render(items) {
+    const limited = items.slice(0, 200);
+    countEl.textContent =
+      items.length > 200
+        ? `Showing 200 of ${items.length} results`
+        : `${items.length} results`;
+
+    tbody.innerHTML = limited
+      .map(
+        (p) => `<tr>
+        <td>${p.name}</td>
+        <td>${p.country}</td>
+        <td class="num"><a href="/results/${p.year}">${p.year}</a></td>
+        <td class="num">${p.rank}</td>
+        <td class="num"><strong>${p.total}</strong></td>
+        <td>${awardHtml[p.award] || ''}</td>
+      </tr>`,
+      )
+      .join('');
+  }
+
+  function search() {
+    const q = input.value.toLowerCase().trim();
+    if (!q) {
+      render(data);
+      return;
+    }
+    const terms = q.split(/\s+/);
+    const filtered = data.filter((p) => {
+      const hay =
+        `${p.name} ${p.country} ${p.year} ${p.award || ''}`.toLowerCase();
+      return terms.every((t) => hay.includes(t));
+    });
+    render(filtered);
+  }
+
+  input.addEventListener('input', search);
+  render(data);
+</script>
+
+<style>
+  .subtitle {
+    color: var(--color-text-muted);
+    margin-bottom: 1.5rem;
+  }
+  .search-box {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.6rem 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    font-size: 1rem;
+    font-family: var(--font-sans);
+    outline: none;
+    transition: border-color 0.15s;
+  }
+  .search-box:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px var(--color-primary-light);
+  }
+  .results-count {
+    margin: 0.75rem 0;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+  }
+  .table-wrap {
+    overflow-x: auto;
+  }
+</style>

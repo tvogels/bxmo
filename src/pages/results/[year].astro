@@ -1,0 +1,264 @@
+---
+import type { GetStaticPaths } from 'astro';
+import Layout from '../../components/Layout.astro';
+import {
+  getEditionYears,
+  loadEdition,
+  countryName,
+  participantName,
+  loadCountries,
+} from '../../lib/data';
+import { computeAwards, countMedals, AWARD_LABELS } from '../../lib/awards';
+import {
+  rankParticipants,
+  computeCountryStats,
+  computeProblemStats,
+} from '../../lib/stats';
+
+export const getStaticPaths: GetStaticPaths = () => {
+  return getEditionYears().map((year) => ({ params: { year: String(year) } }));
+};
+
+const { year } = Astro.params;
+const yearNum = Number(year);
+const edition = loadEdition(yearNum)!;
+const countries = loadCountries();
+const years = getEditionYears();
+
+const withAwards = computeAwards(
+  edition.participants,
+  edition.thresholds,
+  edition.honourableMentions,
+);
+const ranked = rankParticipants(withAwards);
+const medals = countMedals(withAwards);
+const countryStats = computeCountryStats(withAwards, countries);
+const problemStats = computeProblemStats(withAwards);
+
+const prevYear = years[years.indexOf(yearNum) - 1];
+const nextYear = years[years.indexOf(yearNum) + 1];
+
+function medalClass(award: string | null): string {
+  if (!award) return '';
+  return `medal medal-${award}`;
+}
+
+function medalLabel(award: string | null): string {
+  if (!award) return '';
+  return AWARD_LABELS[award] ?? '';
+}
+---
+
+<Layout
+  title={`BxMO ${year} Results`}
+  description={`Results and statistics for the ${year} Benelux Mathematical Olympiad in ${edition.location}`}
+>
+  <div class="page-nav">
+    {prevYear && <a href={`/results/${prevYear}`}>← {prevYear}</a>}
+    <span class="spacer"></span>
+    {nextYear && <a href={`/results/${nextYear}`}>{nextYear} →</a>}
+  </div>
+
+  <h1>BxMO {year} — {edition.location}</h1>
+  <p class="subtitle">
+    {countryName(edition.country, countries)} ·
+    {edition.participants.length} participants ·
+    {edition.delegations.length} countries
+  </p>
+
+  <!-- Medal summary -->
+  <div class="medal-summary card">
+    <h3>Medals</h3>
+    <div class="medal-grid">
+      <div class="medal-stat">
+        <span class="medal medal-gold">{medals.gold}</span> Gold (≥{
+          edition.thresholds.gold
+        })
+      </div>
+      <div class="medal-stat">
+        <span class="medal medal-silver">{medals.silver}</span> Silver (≥{
+          edition.thresholds.silver
+        })
+      </div>
+      <div class="medal-stat">
+        <span class="medal medal-bronze">{medals.bronze}</span> Bronze (≥{
+          edition.thresholds.bronze
+        })
+      </div>
+      {
+        edition.honourableMentions && medals.hm > 0 && (
+          <div class="medal-stat">
+            <span class="medal medal-hm">{medals.hm}</span> Honourable Mention
+          </div>
+        )
+      }
+    </div>
+  </div>
+
+  <!-- Individual results -->
+  <h2>Individual Results</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Country</th>
+          <th class="num">P1</th>
+          <th class="num">P2</th>
+          <th class="num">P3</th>
+          <th class="num">P4</th>
+          <th class="num">Total</th>
+          <th>Award</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          ranked.map((p) => (
+            <tr>
+              <td class="num">{p.rank}</td>
+              <td>{participantName(p)}</td>
+              <td>{countryName(p.country, countries)}</td>
+              <td class="num">{p.scores[0]}</td>
+              <td class="num">{p.scores[1]}</td>
+              <td class="num">{p.scores[2]}</td>
+              <td class="num">{p.scores[3]}</td>
+              <td class="num">
+                <strong>{p.totalScore}</strong>
+              </td>
+              <td>
+                {p.award && (
+                  <span class={medalClass(p.award)}>{medalLabel(p.award)}</span>
+                )}
+              </td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Country statistics -->
+  <h2>Country Statistics</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th class="num">N</th>
+          <th class="num">Avg</th>
+          <th class="num">Min</th>
+          <th class="num">Q1</th>
+          <th class="num">Med</th>
+          <th class="num">Q3</th>
+          <th class="num">Max</th>
+          <th class="num">🥇</th>
+          <th class="num">🥈</th>
+          <th class="num">🥉</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          countryStats.map((cs) => (
+            <tr>
+              <td>{cs.countryName}</td>
+              <td class="num">{cs.count}</td>
+              <td class="num">{cs.avgScore.toFixed(1)}</td>
+              <td class="num">{cs.minScore}</td>
+              <td class="num">{cs.q1.toFixed(1)}</td>
+              <td class="num">{cs.median.toFixed(1)}</td>
+              <td class="num">{cs.q3.toFixed(1)}</td>
+              <td class="num">{cs.maxScore}</td>
+              <td class="num">{cs.gold || ''}</td>
+              <td class="num">{cs.silver || ''}</td>
+              <td class="num">{cs.bronze || ''}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Problem statistics -->
+  <h2>Problem Statistics</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Problem</th>
+          <th class="num">Mean</th>
+          <th class="num">Median</th>
+          <th class="num">Std Dev</th>
+          {[0, 1, 2, 3, 4, 5, 6, 7].map((s) => <th class="num">{s}</th>)}
+        </tr>
+      </thead>
+      <tbody>
+        {
+          problemStats.map((ps) => (
+            <tr>
+              <td>
+                <strong>P{ps.problem}</strong>
+              </td>
+              <td class="num">{ps.mean.toFixed(2)}</td>
+              <td class="num">{ps.median.toFixed(1)}</td>
+              <td class="num">{ps.stddev.toFixed(2)}</td>
+              {ps.histogram.map((count) => (
+                <td class="num">{count}</td>
+              ))}
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Links -->
+  <h2>Downloads</h2>
+  <p>
+    <a href={`/results/${year}.csv`}>📊 Download results as CSV</a>
+    &nbsp;·&nbsp;
+    <a href={`/edition/${year}`}>📋 Edition details and problem PDFs</a>
+  </p>
+</Layout>
+
+<style>
+  .page-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+  .page-nav .spacer {
+    flex: 1;
+  }
+  .subtitle {
+    color: var(--color-text-muted);
+    margin-bottom: 1.5rem;
+  }
+  .medal-summary {
+    margin-bottom: 2rem;
+  }
+  .medal-summary h3 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+  }
+  .medal-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .medal-stat {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .table-wrap {
+    overflow-x: auto;
+    margin-bottom: 2rem;
+  }
+  th.num,
+  td.num {
+    text-align: right;
+  }
+</style>
