@@ -56,7 +56,7 @@ This is a **static Astro site** — all pages are pre-rendered at build time via
 - **Scores**: Always an array of exactly 4 integers, each 0–7.
 - **Thresholds**: Must satisfy `bronze ≤ silver ≤ gold`.
 - **Styling**: CSS custom properties defined in `Layout.astro` (e.g., `--color-primary`, `--color-gold`). Scoped `<style>` blocks per page/component.
-- **Site base path**: Deployed under `/bxmo` on GitHub Pages — `astro.config.mjs` sets `base: '/bxmo'`.
+- **Site base path**: Deployed at root on GitHub Pages — `astro.config.mjs` sets `base: '/'`.
 
 ## Adding a New Edition
 
