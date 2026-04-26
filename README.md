@@ -35,6 +35,8 @@ Open `data/editions/2026.yaml` to add:
 - `problems`: List of language codes for available problem PDFs
 - `delegations`: Country delegations with leaders and deputies
 
+Run `npx prettier --write data/editions/2026.yaml`.
+
 ### 3. Add problem PDFs
 
 Copy PDF files to `public/problems/` following the naming convention:
